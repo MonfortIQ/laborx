@@ -165,7 +165,7 @@ img { max-width: 100%; display: block; }
   .lx-btn { width: 100%; }
   .lx-card .lx-page-actions .lx-btn { width: 100%; }
   .lx-dash-head { display: block; }
-  .lx-auth-tools, .lx-dash-tools { justify-content: flex-start; }
+  .lx-auth-tools, .lx-dash-tools { justify-content: flex-end; }
   .lx-auth { padding: 16px; align-items: start; }
   .lx-auth-card { border-radius: 8px; }
   .lx-auth-visual { display: none; }

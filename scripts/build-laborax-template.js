@@ -55,8 +55,8 @@ img { max-width: 100%; display: block; }
 .lx-card > .lx-media img { min-height: 190px; aspect-ratio: 16 / 10; }
 .lx-card > .lx-chip-row { margin-top: 12px; padding-top: 0; }
 .lx-card > .lx-price { min-height: 40px; margin-top: auto; padding-top: 18px; }
-.lx-card > .lx-page-actions { margin-top: 0; padding-top: 18px; }
-.lx-card:not(:has(.lx-price)) > .lx-page-actions { margin-top: auto; }
+.lx-card > .lx-page-actions { margin-top: auto; padding-top: 18px; }
+.lx-card > .lx-price + .lx-page-actions { margin-top: 0; }
 .lx-stats { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 14px; margin-top: 34px; }
 .lx-stat { padding: 18px; border: 1px solid rgb(var(--border-primary)); border-radius: var(--lx-radius); background: rgb(var(--surface)); }
 .lx-stat strong { display: block; font-size: clamp(24px, 3vw, 34px); color: rgb(var(--primary-red)); line-height: 1; }
@@ -832,5 +832,6 @@ dashShell('admin','index','Admin Overview','Overview',`${kpiCards}<section class
 
 write('pages/admin/index.html', '<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Admin Dashboard Redirect - LaboraX</title><meta name="description" content="Redirect helper page for the LaboraX admin dashboard."><meta http-equiv="refresh" content="0; url=../dashboard/admin/index.html"></head><body><main><h1>Admin Dashboard</h1><a href="../dashboard/admin/index.html">Open Admin Dashboard</a></main></body></html>');
 write('pages/dashboard/index.html', '<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Patient Dashboard Redirect - LaboraX</title><meta name="description" content="Redirect helper page for the LaboraX patient dashboard."><meta http-equiv="refresh" content="0; url=patient/index.html"></head><body><main><h1>Patient Dashboard</h1><a href="patient/index.html">Open Patient Dashboard</a></main></body></html>');
+
 
 
