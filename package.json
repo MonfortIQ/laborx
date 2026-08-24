@@ -1,0 +1,11 @@
+{
+  "name": "laborax",
+  "version": "1.0.0",
+  "description": "LaboraX - Diagnostic Laboratory & Health Checkup HTML Template",
+  "scripts": {
+    "build:css": "tailwindcss -i ./assets/css/input.css -o ./assets/css/style.css --watch"
+  },
+  "devDependencies": {
+    "tailwindcss": "^3.4.19"
+  }
+}
