@@ -1,0 +1,1294 @@
+<USER_REQUEST>
+Yes, understood. You want to **remove Home Collection completely** and make **every page have a proper hero section**, while keeping **Home 1 and Home 2 completely separate** in both desktop and mobile views.
+
+Use this updated prompt:
+
+```text
+LABORAX — FINAL PAGE STRUCTURE + HERO DESIGN UPDATE
+====================================================
+
+IMPORTANT:
+Update the entire LaboraX project according to the following
+requirements.
+
+Do NOT partially update the existing pages.
+
+====================================================
+1. REMOVE HOME COLLECTION COMPLETELY
+====================================================
+
+REMOVE "Home Collection" from the entire project.
+
+Delete/remove:
+
+- Home Collection page
+- Home Collection navbar link
+- Home Collection footer link
+- Home Collection dropdown item
+- Home Collection breadcrumbs
+- Home Collection cards
+- Home Collection CTA references
+- Home Collection images
+- Home Collection navigation references
+
+Search the entire project and make sure there are NO remaining
+"Home Collection" links or references.
+
+Do not replace it with another page.
+
+====================================================
+2. FINAL MAIN PAGE STRUCTURE
+====================================================
+
+HOME 1 — TRUSTED DIAGNOSTICS
+
+Home
+Tests
+Packages
+Services
+About
+Blog
+Contact
+FAQ
+Pricing
+Login
+Register
+
+
+HOME 2 — DIGITAL DIAGNOSTICS
+
+Home
+Tests
+Packages
+Services
+About
+Blog
+Contact
+FAQ
+Pricing
+Login
+Register
+
+Both homes must have the SAME NAVBAR STRUCTURE.
+
+However, every destination must remain context-specific.
+
+====================================================
+3. HOME 1 NAVIGATION
+====================================================
+
+Home
+Tests
+Packages
+Services
+About
+Blog
+Contact
+FAQ
+Pricing
+
+Home dropdown:
+
+Home 1 — Trusted Diagnostics
+Home 2 — Digital Diagnostics
+
+Home 1 links:
+
+Tests
+→ pages/home1/tests.html
+
+Packages
+→ pages/home1/packages.html
+
+Services
+→ pages/home1/services.html
+
+About
+→ pages/home1/about.html
+
+Blog
+→ pages/home1/blog.html
+
+Contact
+→ pages/home1/contact.html
+
+FAQ
+→ pages/home1/faq.html
+
+Pricing
+→ pages/home1/pricing.html
+
+
+====================================================
+4. HOME 2 NAVIGATION
+====================================================
+
+Same navbar structure:
+
+Home
+Tests
+Packages
+Services
+About
+Blog
+Contact
+FAQ
+Pricing
+
+But Home 2 links must point to:
+
+pages/home2/tests.html
+pages/home2/packages.html
+pages/home2/services.html
+pages/home2/about.html
+pages/home2/blog.html
+pages/home2/contact.html
+pages/home2/faq.html
+pages/home2/pricing.html
+
+NEVER accidentally link Home 2 pages to Home 1 pages.
+
+====================================================
+5. HERO SECTION — ALL PAGES
+====================================================
+
+EVERY INTERNAL PAGE MUST HAVE A PROPER HERO SECTION.
+
+Do NOT create plain pages where the content begins immediately
+after the navbar.
+
+Every page should begin with:
+
+Navbar
+↓
+Hero Section
+↓
+Main Page Content
+
+This applies to BOTH:
+
+Home 1
+Home 2
+
+and every internal page.
+
+====================================================
+6. HERO DESIGN SYSTEM
+====================================================
+
+Create a consistent LaboraX hero component, but customize the
+content and image for every page.
+
+Hero should contain:
+
+- Breadcrumb
+- Small eyebrow label
+- Large H1
+- Supporting paragraph
+- Primary CTA
+- Optional secondary CTA
+- Relevant medical image or visual
+- Decorative background elements
+
+Do NOT use the exact same hero content on every page.
+
+Each page needs its own:
+
+Title
+Description
+Image
+Eyebrow
+CTA
+Visual treatment
+
+====================================================
+7. HOME 1 HERO STYLE
+====================================================
+
+Home 1 represents:
+
+TRUSTED DIAGNOSTIC LABORATORY
+
+Hero visual style:
+
+Clinical
+Professional
+Trustworthy
+Premium
+Human-centered
+
+Use realistic images of:
+
+- Diagnostic laboratories
+- Pathologists
+- Laboratory technicians
+- Blood testing
+- Microscopes
+- Medical professionals
+- Patient diagnostics
+
+Avoid digital/technology-heavy imagery.
+
+Example:
+
+Eyebrow:
+
+TRUSTED DIAGNOSTIC CARE
+
+H1:
+
+Your Health.
+Our Precision.
+
+Description:
+
+Reliable laboratory testing, preventive health screening,
+and accurate diagnostic reports designed around your healthcare
+needs.
+
+Buttons:
+
+Book a Test
+Explore Packages
+
+Hero image:
+
+Realistic modern diagnostic laboratory/testing environment.
+
+====================================================
+8. HOME 2 HERO STYLE
+====================================================
+
+Home 2 represents:
+
+DIGITAL DIAGNOSTICS
+
+Hero visual style:
+
+Modern
+Digital
+Smart
+Technology-driven
+Connected healthcare
+
+Use realistic images of:
+
+- Doctor using tablet
+- Digital health dashboard
+- Patient viewing medical report
+- Healthcare technology
+- Digital diagnostics
+- Medical analytics
+- Connected healthcare
+
+Example:
+
+Eyebrow:
+
+SMART DIGITAL DIAGNOSTICS
+
+H1:
+
+Diagnostics.
+Connected to You.
+
+Description:
+
+Book tests online, track your diagnostic journey, access secure
+digital reports, and keep your health information connected.
+
+Buttons:
+
+Start Your Test
+Explore Digital Care
+
+Do NOT reuse the Home 1 hero image.
+
+====================================================
+9. TESTS PAGE HERO — HOME 1
+====================================================
+
+Page:
+
+pages/home1/tests.html
+
+Hero:
+
+Eyebrow:
+
+DIAGNOSTIC TESTS
+
+H1:
+
+Find the Right Test for Your Health
+
+Description:
+
+Explore accurate laboratory tests across blood, diabetes,
+thyroid, vitamin, heart, liver, kidney, and preventive health.
+
+CTA:
+
+Browse Tests
+
+Image:
+
+Real blood test / laboratory technician image.
+
+Below hero:
+
+Test search
+Categories
+Test cards
+
+====================================================
+10. TESTS PAGE HERO — HOME 2
+====================================================
+
+Page:
+
+pages/home2/tests.html
+
+Eyebrow:
+
+SMART TEST DISCOVERY
+
+H1:
+
+Discover Diagnostics Made Simpler
+
+Description:
+
+Find the right diagnostic test, understand what it measures,
+and manage your testing journey from one connected platform.
+
+CTA:
+
+Explore Smart Tests
+
+Image:
+
+Doctor using tablet / digital healthcare image.
+
+Completely different from Home 1.
+
+====================================================
+11. PACKAGES HERO — HOME 1
+====================================================
+
+Eyebrow:
+
+HEALTH PACKAGES
+
+H1:
+
+Complete Health Checks, Made Simple
+
+Description:
+
+Choose carefully designed preventive health packages for
+every stage of life.
+
+CTA:
+
+Explore Packages
+
+Image:
+
+Doctor discussing health screening / medical checkup.
+
+====================================================
+12. PACKAGES HERO — HOME 2
+====================================================
+
+Eyebrow:
+
+DIGITAL HEALTH PLANS
+
+H1:
+
+Smarter Health Plans for Modern Life
+
+Description:
+
+Combine diagnostics, digital reports, health tracking, and
+personalized insights in one connected experience.
+
+CTA:
+
+Explore Digital Plans
+
+Image:
+
+Digital health dashboard / doctor with tablet.
+
+====================================================
+13. SERVICES HERO — HOME 1
+====================================================
+
+Eyebrow:
+
+LABORATORY SERVICES
+
+H1:
+
+Professional Diagnostics You Can Trust
+
+Description:
+
+From routine blood testing to advanced health screening,
+our diagnostic services focus on accuracy and patient care.
+
+CTA:
+
+Explore Services
+
+Image:
+
+Laboratory technician working with diagnostic equipment.
+
+====================================================
+14. SERVICES HERO — HOME 2
+====================================================
+
+Eyebrow:
+
+DIGITAL HEALTH SERVICES
+
+H1:
+
+A Smarter Way to Manage Diagnostics
+
+Description:
+
+Connect booking, digital reports, sample tracking, health
+analytics, and patient services in one platform.
+
+CTA:
+
+Explore Digital Services
+
+Image:
+
+Digital healthcare professional using technology.
+
+====================================================
+15. ABOUT HERO — HOME 1
+====================================================
+
+Eyebrow:
+
+ABOUT LABORAX
+
+H1:
+
+Built on Trust. Focused on Your Health.
+
+Description:
+
+Learn how LaboraX combines laboratory expertise, quality
+processes, and patient-first care.
+
+Image:
+
+Real diagnostic laboratory / medical team.
+
+====================================================
+16. ABOUT HERO — HOME 2
+====================================================
+
+Eyebrow:
+
+OUR DIGITAL VISION
+
+H1:
+
+Building the Future of Connected Diagnostics
+
+Description:
+
+We combine diagnostics and technology to create a simpler,
+more connected patient experience.
+
+Image:
+
+Healthcare technology / doctor using digital system.
+
+====================================================
+17. BLOG HERO — HOME 1
+====================================================
+
+Eyebrow:
+
+HEALTH & WELLNESS
+
+H1:
+
+Knowledge for Better Health Decisions
+
+Description:
+
+Explore practical information about diagnostic tests,
+preventive care, nutrition, and everyday health.
+
+CTA:
+
+Read Health Articles
+
+Image:
+
+Doctor/patient consultation or medical education image.
+
+====================================================
+18. BLOG HERO — HOME 2
+====================================================
+
+Eyebrow:
+
+DIGITAL HEALTH INSIGHTS
+
+H1:
+
+The Future of Connected Healthcare
+
+Description:
+
+Discover how digital diagnostics, healthcare technology,
+analytics, and connected care are changing the patient journey.
+
+CTA:
+
+Explore Insights
+
+Image:
+
+Digital healthcare / medical technology image.
+
+====================================================
+19. CONTACT HERO — HOME 1
+====================================================
+
+Eyebrow:
+
+CONTACT LABORAX
+
+H1:
+
+We're Here to Help With Your Diagnostics
+
+Description:
+
+Contact our diagnostic team for test information,
+appointments, reports, and patient support.
+
+CTA:
+
+Contact Our Team
+
+Image:
+
+Professional laboratory reception / healthcare support.
+
+====================================================
+20. CONTACT HERO — HOME 2
+====================================================
+
+Eyebrow:
+
+DIGITAL SUPPORT
+
+H1:
+
+Connect With Your LaboraX Support Team
+
+Description:
+
+Get assistance with digital reports, online bookings,
+accounts, diagnostic tracking, and digital healthcare services.
+
+CTA:
+
+Get Support
+
+Image:
+
+Healthcare support professional using computer/tablet.
+
+====================================================
+21. FAQ HERO — HOME 1
+====================================================
+
+Eyebrow:
+
+PATIENT SUPPORT
+
+H1:
+
+Questions About Your Diagnostics?
+
+Description:
+
+Find answers about laboratory tests, preparation, reports,
+appointments, and patient services.
+
+Image:
+
+Doctor speaking with patient.
+
+====================================================
+22. FAQ HERO — HOME 2
+====================================================
+
+Eyebrow:
+
+DIGITAL HELP CENTRE
+
+H1:
+
+Answers for Your Digital Health Journey
+
+Description:
+
+Find answers about online booking, digital reports,
+accounts, tracking, notifications, and connected healthcare.
+
+Image:
+
+Digital healthcare support.
+
+====================================================
+23. PRICING HERO — HOME 1
+====================================================
+
+Eyebrow:
+
+DIAGNOSTIC PRICING
+
+H1:
+
+Clear Pricing for Essential Diagnostics
+
+Description:
+
+Explore transparent pricing for individual tests and
+preventive health packages.
+
+Image:
+
+Laboratory testing / medical report.
+
+====================================================
+24. PRICING HERO — HOME 2
+====================================================
+
+Eyebrow:
+
+DIGITAL CARE PLANS
+
+H1:
+
+Flexible Plans for Connected Healthcare
+
+Description:
+
+Choose the digital healthcare experience that fits your
+needs.
+
+Image:
+
+Digital health analytics / patient dashboard.
+
+====================================================
+25. SERVICE DETAIL HERO
+====================================================
+
+Every individual service detail page must also have its own
+hero.
+
+Example:
+
+Blood Testing:
+
+Eyebrow:
+
+DIAGNOSTIC SERVICE
+
+H1:
+
+Accurate Blood Testing for Better Health Decisions
+
+Image:
+
+Real blood sample laboratory image.
+
+Then:
+
+Overview
+How It Works
+Benefits
+Preparation
+What We Test
+Report Timeline
+FAQs
+Related Services
+CTA
+
+
+Digital Reports:
+
+Eyebrow:
+
+DIGITAL SERVICE
+
+H1:
+
+Your Diagnostic Reports, Always Within Reach
+
+Image:
+
+Patient viewing digital medical report.
+
+Then:
+
+How It Works
+Secure Access
+PDF Downloads
+Report History
+Doctor Sharing
+Notifications
+FAQs
+Related Digital Services
+CTA
+
+====================================================
+26. PACKAGE DETAIL HERO
+====================================================
+
+Every package needs a unique hero.
+
+Example:
+
+Complete Health Checkup:
+
+H1:
+
+A Complete Picture of Your Everyday Health
+
+Image:
+
+Doctor discussing health checkup.
+
+Include:
+
+Package overview
+Tests included
+Who it's for
+Preparation
+Report timeline
+Benefits
+Pricing
+FAQs
+Book Now
+
+Another package:
+
+Heart Health:
+
+H1:
+
+Take a Closer Look at Your Heart Health
+
+Use a different image.
+
+Different content.
+
+====================================================
+27. BLOG DETAIL HERO
+====================================================
+
+Every blog article must have its own hero.
+
+Example:
+
+Blood Test Guide:
+
+Category:
+
+BLOOD TESTS
+
+H1:
+
+Understanding Your Complete Blood Count
+
+Author
+Date
+Reading time
+
+Unique hero image.
+
+Article content begins below.
+
+Another article:
+
+Vitamin D:
+
+H1:
+
+Why Vitamin D Testing Matters
+
+Different:
+
+Image
+Title
+Author
+Date
+Content
+Related articles
+
+====================================================
+28. HERO IMAGE RULE
+====================================================
+
+EVERY PAGE MUST HAVE A RELEVANT IMAGE.
+
+Do not reuse the same hero image across all pages.
+
+Use:
+
+assets/images/home1/hero/
+assets/images/home2/hero/
+
+Organize images:
+
+home1/
+├── hero/
+├── tests/
+├── services/
+├── packages/
+├── about/
+├── blog/
+└── contact/
+
+home2/
+├── hero/
+├── tests/
+├── services/
+├── packages/
+├── about/
+├── blog/
+└── contact/
+
+Use realistic, high-quality healthcare imagery.
+
+NO:
+
+random stock images
+unrelated business images
+generic office images
+technology images on clinical pages
+
+====================================================
+29. DESKTOP HERO
+====================================================
+
+Desktop hero:
+
+min-height:
+480–620px
+
+Layout:
+
+LEFT:
+
+Eyebrow
+H1
+Description
+CTA
+
+RIGHT:
+
+Large image
+
+Image should have:
+
+rounded corners
+soft shadow
+decorative red shape
+small floating information card
+
+Example floating card:
+
+98.7%
+Report Accuracy
+
+or:
+
+50K+
+Patients Served
+
+Use context-specific information.
+
+====================================================
+30. MOBILE HERO
+====================================================
+
+MOBILE DESIGN IS CRITICAL.
+
+Test:
+
+320px
+360px
+375px
+390px
+414px
+430px
+
+Hero must become:
+
+Eyebrow
+H1
+Description
+CTA
+Image
+Floating card
+
+No:
+
+horizontal overflow
+cropped text
+overlapping buttons
+oversized heading
+image overflow
+fixed-width containers
+
+Use responsive typography.
+
+Example:
+
+Desktop H1:
+64px
+
+Tablet:
+48px
+
+Mobile:
+36px
+
+Small mobile:
+32px
+
+====================================================
+31. MOBILE NAVBAR
+====================================================
+
+Navbar must remain compact.
+
+Mobile:
+
+Logo
+Search
+Theme
+RTL
+Hamburger
+
+When hamburger opens:
+
+Home 1
+Home 2
+Tests
+Packages
+Services
+About
+Blog
+Contact
+FAQ
+Pricing
+Login/Register
+
+Menu must:
+
+fit viewport
+scroll vertically if necessary
+not extend beyond screen
+not create horizontal scrolling
+
+====================================================
+32. HERO ANIMATIONS
+====================================================
+
+Every hero should animate on page load.
+
+Animation sequence:
+
+Eyebrow:
+fade + slide up
+
+H1:
+fade + slide up
+
+Description:
+fade + slide up
+
+CTA:
+fade + slide up
+
+Image:
+fade + scale
+
+Floating card:
+fade + slide
+
+Use CSS + Vanilla JavaScript.
+
+Animation should be smooth.
+
+Do NOT use excessive animations.
+
+====================================================
+33. SCROLL ANIMATIONS
+====================================================
+
+Below hero:
+
+Cards
+Sections
+Images
+Statistics
+Testimonials
+FAQs
+
+should animate when entering viewport.
+
+Use:
+
+IntersectionObserver
+
+Animations:
+
+fade-up
+fade-left
+fade-right
+scale-in
+
+Use staggered delays for cards.
+
+====================================================
+34. LIGHT / DARK MODE
+====================================================
+
+Both Home 1 and Home 2 must support:
+
+LIGHT MODE
+DARK MODE
+
+Theme toggle must work on:
+
+Home pages
+Tests
+Services
+Service details
+Packages
+Package details
+About
+Blog
+Blog details
+Contact
+FAQ
+Pricing
+Login
+Register
+Dashboard
+404
+Maintenance
+
+Persist theme:
+
+localStorage
+
+Do NOT only change the navbar.
+
+The entire page must change theme.
+
+====================================================
+35. RTL
+====================================================
+
+RTL button must work across ALL pages.
+
+When RTL is enabled:
+
+Hero text alignment
+Hero image position
+Breadcrumbs
+Cards
+Buttons
+Forms
+Blog
+FAQ
+Footer
+Navigation
+
+must correctly reverse/adapt.
+
+Persist:
+
+localStorage
+
+====================================================
+36. HOME 1 / HOME 2 CONTENT SEPARATION
+====================================================
+
+VERY IMPORTANT:
+
+Home 1 and Home 2 must never share:
+
+Hero content
+Hero images
+About content
+Service cards
+Service details
+Package cards
+Package details
+Blog cards
+Blog details
+Contact content
+FAQ content
+Pricing content
+
+They can share:
+
+Logo
+Navbar component structure
+Theme system
+RTL system
+Authentication system
+Global design tokens
+Footer structure
+
+====================================================
+37. REMOVE OLD CONTENT
+====================================================
+
+Search the complete project for:
+
+Home Collection
+home-collection
+Home Collection
+collection page
+
+Remove all navigation and page references.
+
+Also remove dead links.
+
+====================================================
+38. NAVIGATION VALIDATION
+====================================================
+
+Check every navbar link.
+
+Check every footer link.
+
+Check every CTA.
+
+Check every card.
+
+Check every breadcrumb.
+
+Check every:
+
+View Details
+Read More
+Explore
+Book Now
+Learn More
+
+They must open the correct page.
+
+No broken links.
+
+No:
+
+Cannot GET
+
+No:
+
+404
+
+No:
+
+href="#"
+
+for actual navigation.
+
+====================================================
+39. FINAL PAGE EXPERIENCE
+====================================================
+
+Every page must follow:
+
+NAVBAR
+↓
+PAGE-SPECIFIC HERO
+↓
+MAIN CONTENT
+↓
+RELATED CONTENT
+↓
+CTA
+↓
+FOOTER
+
+Each hero must be unique to the page.
+
+====================================================
+40. FINAL QUALITY REQUIREMENT
+====================================================
+
+The website must look like a complete premium
+ThemeForest-quality diagnostic template.
+
+HOME 1:
+
+Trusted
+Clinical
+Human
+Laboratory-focused
+
+HOME 2:
+
+Digital
+Connected
+Smart
+Technology-focused
+
+Both must be:
+
+Responsive
+Mobile-first
+Animated
+Light/Dark
+RTL
+SEO-friendly
+Accessible
+Fast
+Professional
+
+Most importantly:
+
+DO NOT reuse the same page content between Home 1 and Home 2.
+
+DO NOT reuse the same hero image everywhere.
+
+DO NOT create generic detail pages.
+
+DO NOT leave any broken navigation.
+
+REMOVE HOME COLLECTION COMPLETELY.
+
+MAKE EVERY PAGE HAVE A UNIQUE HERO SECTION.
+```
+
+</USER_REQUEST>
+<ADDITIONAL_METADATA>
+The current local time is: 2026-08-25T10:36:37+05:30.
+</ADDITIONAL_METADATA>
