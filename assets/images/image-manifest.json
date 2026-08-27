@@ -1,0 +1,97 @@
+{
+  "home1": {
+    "about": {
+      "quality.jpg": "df18cbb6f27af8d2eb92a513a65e7df4796a1f77ac284a370b17e0c24b10ccaa"
+    },
+    "contact": {
+      "reception.jpg": "1df32b16761a1719ab13392da023b988de5465697d65fa5e66452efddb483304"
+    },
+    "faq": {
+      "doctor-patient.jpg": "ebcb0d764cd0a2e5759a3a8cc86c70a782e3ef0f60a3265ff50fdb2178ef5ad1"
+    },
+    "pricing": {
+      "pricing-bg.jpg": "df6af00c707e2ef39735975cc6534496a0a74392f4f35bc3cec7f8abe13fd1d2"
+    },
+    "tests": {
+      "cbc.jpg": "b27a9c684c94016801d70ad1e21066737832d8d914a4dcd5f238ada1b899492e",
+      "thyroid.jpg": "cf02c8d5d59fd35a391d1f473f40b78fc0fb8bc4906b6656386a89260df0e4c9",
+      "hba1c.jpg": "e4749bd96ef251bd2563285fe080b91fd5dab498bf37225ef8242213cd0e1730",
+      "vitamin.jpg": "9fe2589cdd864c99a5ee21157546dc20715a94a19083324371636a808a1e238d",
+      "liver.jpg": "47bba52009ab5d58169732b3e8da42a79570af07dad6b7a3041674cd3093771d",
+      "kidney.jpg": "22c2faa61014773db4b8a04d4e2a09f604179442852f309f7879f8a52601ce24",
+      "iron.jpg": "828651a794e63e68970ccf95714b40bc7eca9151d5a84bdfeabcd35a97b644ac"
+    },
+    "packages": {
+      "essential.jpg": "85a039d546519889315e380e734e2b52ce7c344f0818026e4059abcd8bb4c9d6",
+      "complete.jpg": "67077e687c2ddb98c4f2cdb0f8ef093ad82667d04bdbdba9485287fdcf3ad1ad",
+      "heart.jpg": "46667940d7ebaa2babb5f4ed81c9ef7a209278801e814b935da62e79047b9138",
+      "diabetes.jpg": "0308c8ccaa994c867fde0a9cf69bd874757a96222de209fc0b22b48afeb341bd",
+      "women.jpg": "8189bec9fb8ebf4c886a4aba0d3af77c32dd53dd90faa283c56cd3c09cee8c1d",
+      "senior.jpg": "9b486b00ff01d6366ce09f276c39587c577d772caad9ea035b4b4813668257f5"
+    },
+    "services": {
+      "blood.jpg": "31cb604e70b644a9195ec98c8248bd2b6e6deabc859636790f56d820c6b98db0",
+      "preventive.jpg": "3cab0ed5e1fb5c1d990c979709562ad451765906b9d8cfe0cc00b08192203aa2",
+      "advanced.jpg": "16e826cd45604928576756a870a302807e3b39e31971b55418295af2a75c419d",
+      "hormone.jpg": "4b5ed89f3b01501ca725550dd62ffc0b23fbe4d4704226bd46e0cf2414842e5f",
+      "wellness.jpg": "4be26afd90d7894074c1511cec37d3191599248f2f61708e7bded7f977934d9d",
+      "digital-reports.jpg": "45a8f81b9d9425d7d9f25a3c0638f51ea71f4f79de583056c0d2671752817eb9"
+    },
+    "blog": {
+      "understanding-blood.jpg": "54ba67c5ea1270959f606a02f2d97ba390707a709a16ad879553ce73c4e0fb42",
+      "preventive.jpg": "a18f2b76bc3786734e16a8b68243024c63512305bbb306ae7eb9c403c8802864",
+      "vitamin-d.jpg": "d8b56a8aad15b57a9754105856468ae0827764a753e0e1dbb72ceb1973996fb9",
+      "preparing.jpg": "4fc5f6af29f759704c0c29ddd659d022b250d84dc20099cab1468db2d1937cd3"
+    }
+  },
+  "home2": {
+    "hero": {
+      "home2-digital-hero.jpg": "ec0cc01c110a857c3df87d1a1454dfe510f00bc77265e31ec28b015effa5d199"
+    },
+    "about": {
+      "digital-team.jpg": "33972983e7ff9e67d47e1415de00fa6a5e6942148b8a446b6c04bec50ea12711",
+      "technology.jpg": "8ccb29af54b18984643368e2477289941c00ef62d0b9e4d30f7fd6cd4421a76d"
+    },
+    "contact": {
+      "digital-support.jpg": "9c6b2a6af4b4f1aaa2af553afa26657f362e14f4b538da90147f7dfe6cc17b8f"
+    },
+    "faq": {
+      "patient-phone.jpg": "ccc9455046b3a9b01cd329e48575c824cacef921169afc7635de590627bde148"
+    },
+    "pricing": {
+      "digital-plans.jpg": "f21dc8133f543a23f311ca04602600194086752e3db62cfc729799153ff06f54"
+    },
+    "services": {
+      "reports.jpg": "14728541a1174817d6645e7e7b4f1abde7a14002e1c4afe53ed6ca26d3ee7148",
+      "booking.jpg": "59044be1aea149b5235f631b5867154341735da4c928484c5c54304925d69fc2",
+      "records.jpg": "e15242fa7276b27decb30122b0da934aa289c07e5a1457b51b5ff80566e1363c",
+      "tracking.jpg": "80a50f831d0d0ced3a536f44a8c3246825a2f09e83b9169abc604bcea77361ad",
+      "reminders.jpg": "287d91f0d7ae3219ae80af3269c012012aba4112a28e99d98791dab8e7143901",
+      "family.jpg": "475d98433c5ed0dcc9a3a6bc410b68cb0dc84df01f92389c54306a40fc4f88c4"
+    },
+    "packages": {
+      "essential.jpg": "fc117938de905bafdcdfae2957ac69d52f913aa7b938777dd1bb5322c023ac96",
+      "wellness.jpg": "6c21eb7796f5566cd612c8bab414b9ed678388d7b41697e506cd7254eccfa97f",
+      "family.jpg": "edd2475e1f0c2dd8190bd4c019afc84ad1480555a81820a915be4bf402b1e4af",
+      "senior.jpg": "175e2ce918fe0a7d7d718badfa44b03256be21aebf0745b8f8c4019b3ffcdb7f",
+      "annual.jpg": "aee6aae9ff390bf2a0873aa4229d0256f61f575427e2f83801078680c64017ba",
+      "complete.jpg": "84032e0db4c0c724dd2fcea89825486d683a073b66a7fe179aecf6ca30451eb2"
+    },
+    "tests": {
+      "digital-blood.jpg": "2104ec35b3baae8bc507d5f651131675701906049e85367eefeff729f4bed08a",
+      "digital-diabetes.jpg": "724e4be10e55da252d7613812371f970340895e47a84311e206cbd4dcf1556e5",
+      "digital-thyroid.jpg": "3ca390064bf82eb8d14bbf869329c145c35ae8a025ddd86cc7f700acaabd2a3e",
+      "digital-vitamin.jpg": "e4402740f250b98978087cd1f6db52ea9124409896bb77bc72006f062923fa63",
+      "digital-liver.jpg": "a04f992827f98818acd98882483c393491a9d590fe058b132f16653c30965a5c",
+      "digital-kidney.jpg": "50dce40b22f91799ca5fb0dc51ba9345e64cb6d90268fee79456f843d3f1bffc",
+      "digital-heart.jpg": "f529c8e1fa7ca03cae637194c19e4be3c7945111e6bf24aa24ae711049f9eb07",
+      "digital-hormones.jpg": "ef3c4b07b1c94f6a22f2e890b65a6e409a5f2052f61f2aee31e956821f99c7fa"
+    },
+    "blog": {
+      "digital-reports-change.jpg": "0f327f659327b6587896bfe28934f22fedb1dcd55d2049cf9d0d3ecb33c728e6",
+      "connected-benefits.jpg": "aa1c5fd6cd65f66265bbe52cb86bd1e531a8f4366126571f3cebbf367cd4cde3",
+      "digital-records.jpg": "ad28ee72c41ab4d52e4d6f2a954042166f96762189eaa53c06fdf3e62787f23d",
+      "tech-diagnostics.jpg": "07f5e1532aa19f00335b3f2b1de65510aee4e67f9ac317b3d0a30c3849a2057f"
+    }
+  }
+}

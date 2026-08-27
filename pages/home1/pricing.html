@@ -3,12 +3,120 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Diagnostic Pricing | LaboraX</title>
+  <title>Diagnostic Pricing & Packages | LaboraX</title>
   
   <!-- CSS -->
   <link rel="stylesheet" href="../../assets/css/style.css">
   <link rel="stylesheet" href="../../assets/css/laborax-template.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+  <link rel="icon" type="image/x-icon" href="../../assets/images/logo/favicon.ico">
+  <link rel="icon" type="image/png" sizes="32x32" href="../../assets/images/logo/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="../../assets/images/logo/favicon-16x16.png">
+  <link rel="apple-touch-icon" href="../../assets/images/logo/apple-touch-icon.png">
+  
+  <style>
+    /* Pricing Table Styles */
+    .lx-pricing-table-wrap {
+      background: var(--surface-color);
+      border-radius: 12px;
+      border: 1px solid var(--border-color);
+      overflow: hidden;
+      margin-top: 32px;
+      margin-bottom: 48px;
+    }
+    .lx-pricing-table {
+      width: 100%;
+      border-collapse: collapse;
+      text-align: left;
+    }
+    .lx-pricing-table th, .lx-pricing-table td {
+      padding: 16px 24px;
+      border-bottom: 1px solid var(--border-color);
+    }
+    .lx-pricing-table th {
+      background: rgba(239, 68, 68, 0.05); /* very light primary red */
+      font-weight: 600;
+      color: var(--text-color);
+    }
+    .lx-pricing-table td {
+      color: var(--muted);
+    }
+    .lx-pricing-table tr:last-child td {
+      border-bottom: none;
+    }
+    .lx-pricing-table td strong {
+      color: var(--text-color);
+    }
+    .lx-price-badge {
+      display: inline-block;
+      padding: 4px 12px;
+      background: var(--primary-color);
+      color: white;
+      border-radius: 20px;
+      font-weight: 700;
+      font-size: 14px;
+    }
+    
+    /* Package Cards */
+    .lx-package-card {
+      border: 1px solid var(--border-color);
+      border-radius: 16px;
+      padding: 32px;
+      background: var(--surface-color);
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      height: 100%;
+    }
+    .lx-package-card.popular {
+      border-color: var(--primary-color);
+      box-shadow: 0 10px 30px rgba(239, 68, 68, 0.1);
+      transform: translateY(-8px);
+    }
+    .lx-package-badge {
+      position: absolute;
+      top: -12px;
+      left: 50%;
+      transform: translateX(-50%);
+      background: var(--primary-color);
+      color: white;
+      padding: 4px 16px;
+      border-radius: 20px;
+      font-size: 12px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+    .lx-package-price {
+      font-size: 42px;
+      font-weight: 800;
+      color: var(--text-color);
+      margin: 16px 0;
+    }
+    .lx-package-price span {
+      font-size: 16px;
+      color: var(--muted);
+      font-weight: 400;
+    }
+    .lx-package-features {
+      list-style: none;
+      padding: 0;
+      margin: 24px 0;
+      flex-grow: 1;
+    }
+    .lx-package-features li {
+      display: flex;
+      align-items: flex-start;
+      gap: 12px;
+      margin-bottom: 12px;
+      color: var(--muted);
+    }
+    .lx-package-features li i {
+      color: var(--success-color, #10B981);
+      font-size: 18px;
+    }
+  </style>
 </head>
 <body>
 
@@ -21,15 +129,14 @@
     <div class="lx-container lx-hero-container">
       <div class="lx-hero-content">
         <span class="lx-eyebrow">DIAGNOSTIC PRICING</span>
-        <h1 class="lx-title">Clear Pricing for Essential Diagnostics</h1>
-        <p class="lx-copy">Explore transparent pricing for individual tests and preventive health packages. No hidden fees.</p>
+        <h1 class="lx-title">Transparent & Affordable Healthcare Pricing</h1>
+        <p class="lx-copy">We believe in complete transparency. No hidden fees, no surprise bills. Explore our individual test pricing and comprehensive health packages below.</p>
         <div class="lx-hero-actions">
-          <a href="packages.html" class="lx-btn primary">View Packages <i class="bi bi-arrow-right"></i></a>
-          
+          <a href="#packages" class="lx-btn primary">View Health Packages <i class="bi bi-arrow-down"></i></a>
         </div>
       </div>
       <div class="lx-hero-visual">
-        <img src="../../assets/images/home1/hero/pricing.jpg" alt="Clear Pricing for Essential Diagnostics">
+        <img src="../../assets/images/home1/pricing/pricing-bg.jpg" alt="Clear Pricing for Essential Diagnostics">
         <div class="lx-floating-card">
           <i class="bi-tag"></i>
           <div>
@@ -41,31 +148,178 @@
     </div>
   </section>
   
-  <!-- Content -->
+  <!-- Individual Tests Table -->
   <section class="lx-section">
     <div class="lx-container">
-      <div class="lx-grid" style="--cols:3;">
-        <article class="lx-card">
-          <span class="lx-iconbox"><i class="bi bi-droplet"></i></span>
-          <h3>Basic Tests</h3>
-          <p>Routine blood, urine, glucose, and thyroid tests.</p>
-          <div class="lx-price" style="margin-top:16px;"><strong>From $12</strong></div>
-          <div class="lx-page-actions" style="margin-top:24px;"><a class="lx-btn secondary" href="tests.html">Browse Tests</a></div>
-        </article>
-        <article class="lx-card">
-          <span class="lx-iconbox"><i class="bi bi-heart-pulse"></i></span>
-          <h3>Wellness Packages</h3>
-          <p>Preventive checkups with bundled savings for you.</p>
-          <div class="lx-price" style="margin-top:16px;"><strong>From $59</strong></div>
-          <div class="lx-page-actions" style="margin-top:24px;"><a class="lx-btn secondary" href="packages.html">View Packages</a></div>
-        </article>
-        <article class="lx-card">
-          <span class="lx-iconbox"><i class="bi bi-building"></i></span>
-          <h3>Corporate Diagnostics</h3>
-          <p>Employee health screening and custom reporting.</p>
-          <div class="lx-price" style="margin-top:16px;"><strong>Custom</strong></div>
-          <div class="lx-page-actions" style="margin-top:24px;"><a class="lx-btn secondary" href="contact.html">Contact Sales</a></div>
-        </article>
+      <div style="text-align: center; max-width: 600px; margin: 0 auto 40px auto;">
+        <span class="lx-eyebrow">A LA CARTE TESTS</span>
+        <h2 class="lx-heading">Individual Test Pricing</h2>
+        <p class="lx-copy">Book individual tests exactly as prescribed by your physician. All tests are performed in our NABL accredited laboratories.</p>
+      </div>
+      
+      <div class="lx-pricing-table-wrap">
+        <table class="lx-pricing-table">
+          <thead>
+            <tr>
+              <th>Test Name</th>
+              <th>Category</th>
+              <th>Report Time</th>
+              <th style="text-align:right;">Price</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>Complete Blood Count (CBC)</strong></td>
+              <td>Hematology</td>
+              <td>8 Hours</td>
+              <td style="text-align:right;"><span class="lx-price-badge">$25</span></td>
+            </tr>
+            <tr>
+              <td><strong>HbA1c (Glycosylated Hemoglobin)</strong></td>
+              <td>Diabetes Care</td>
+              <td>12 Hours</td>
+              <td style="text-align:right;"><span class="lx-price-badge">$45</span></td>
+            </tr>
+            <tr>
+              <td><strong>Fasting Blood Sugar (FBS)</strong></td>
+              <td>Diabetes Care</td>
+              <td>6 Hours</td>
+              <td style="text-align:right;"><span class="lx-price-badge">$15</span></td>
+            </tr>
+            <tr>
+              <td><strong>Lipid Profile</strong></td>
+              <td>Cardiology</td>
+              <td>12 Hours</td>
+              <td style="text-align:right;"><span class="lx-price-badge">$50</span></td>
+            </tr>
+            <tr>
+              <td><strong>Thyroid Profile (T3, T4, TSH)</strong></td>
+              <td>Endocrinology</td>
+              <td>24 Hours</td>
+              <td style="text-align:right;"><span class="lx-price-badge">$60</span></td>
+            </tr>
+            <tr>
+              <td><strong>Liver Function Test (LFT)</strong></td>
+              <td>Hepatology</td>
+              <td>24 Hours</td>
+              <td style="text-align:right;"><span class="lx-price-badge">$55</span></td>
+            </tr>
+            <tr>
+              <td><strong>Kidney Function Test (KFT)</strong></td>
+              <td>Nephrology</td>
+              <td>12 Hours</td>
+              <td style="text-align:right;"><span class="lx-price-badge">$55</span></td>
+            </tr>
+            <tr>
+              <td><strong>Vitamin D (25-OH)</strong></td>
+              <td>Nutrition/Bone</td>
+              <td>24 Hours</td>
+              <td style="text-align:right;"><span class="lx-price-badge">$85</span></td>
+            </tr>
+            <tr>
+              <td><strong>Vitamin B12</strong></td>
+              <td>Neurology</td>
+              <td>24 Hours</td>
+              <td style="text-align:right;"><span class="lx-price-badge">$80</span></td>
+            </tr>
+            <tr>
+              <td><strong>C-Reactive Protein (CRP)</strong></td>
+              <td>Immunology</td>
+              <td>8 Hours</td>
+              <td style="text-align:right;"><span class="lx-price-badge">$55</span></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div style="text-align: center;">
+        <a href="tests.html" class="lx-btn secondary">Browse All Tests</a>
+      </div>
+    </div>
+  </section>
+  
+  <!-- Health Packages -->
+  <section id="packages" class="lx-section" style="background-color: var(--bg-color-alt);">
+    <div class="lx-container">
+      <div style="text-align: center; max-width: 600px; margin: 0 auto 60px auto;">
+        <span class="lx-eyebrow">PREVENTIVE CARE</span>
+        <h2 class="lx-heading">Comprehensive Health Packages</h2>
+        <p class="lx-copy">Save up to 40% when you bundle essential tests. Recommended annually for adults over 30.</p>
+      </div>
+      
+      <div class="lx-grid" style="--cols:3; align-items: stretch;">
+        
+        <!-- Basic -->
+        <div class="lx-package-card">
+          <h3 style="margin-top:0;">Basic Wellness</h3>
+          <p style="margin:0; color:var(--muted);">Essential screening for overall health.</p>
+          <div class="lx-package-price">$99 <span>/ package</span></div>
+          <p style="color:var(--primary-color); font-size:14px; font-weight:600;">Includes 45 Parameters</p>
+          <ul class="lx-package-features">
+            <li><i class="bi bi-check-circle-fill"></i> Complete Blood Count (CBC)</li>
+            <li><i class="bi bi-check-circle-fill"></i> Fasting Blood Sugar (FBS)</li>
+            <li><i class="bi bi-check-circle-fill"></i> Lipid Profile (Cholesterol)</li>
+            <li><i class="bi bi-check-circle-fill"></i> Urine Routine</li>
+            <li><i class="bi bi-check-circle-fill"></i> Free Home Sample Collection</li>
+          </ul>
+          <a href="contact.html" class="lx-btn secondary" style="width:100%; display:flex; justify-content:center;">Book Now</a>
+        </div>
+        
+        <!-- Advanced -->
+        <div class="lx-package-card popular">
+          <div class="lx-package-badge">Most Popular</div>
+          <h3 style="margin-top:0;">Advanced Full Body</h3>
+          <p style="margin:0; color:var(--muted);">Comprehensive analysis of vital organs.</p>
+          <div class="lx-package-price">$199 <span>/ package</span></div>
+          <p style="color:var(--primary-color); font-size:14px; font-weight:600;">Includes 75 Parameters</p>
+          <ul class="lx-package-features">
+            <li><i class="bi bi-check-circle-fill"></i> Everything in Basic Wellness</li>
+            <li><i class="bi bi-check-circle-fill"></i> Liver Function Test (LFT)</li>
+            <li><i class="bi bi-check-circle-fill"></i> Kidney Function Test (KFT)</li>
+            <li><i class="bi bi-check-circle-fill"></i> Complete Thyroid Profile</li>
+            <li><i class="bi bi-check-circle-fill"></i> HbA1c (Diabetes Tracker)</li>
+            <li><i class="bi bi-check-circle-fill"></i> Tele-consultation with Doctor</li>
+          </ul>
+          <a href="contact.html" class="lx-btn primary" style="width:100%; display:flex; justify-content:center;">Book Now</a>
+        </div>
+        
+        <!-- Premium -->
+        <div class="lx-package-card">
+          <h3 style="margin-top:0;">Premium Executive</h3>
+          <p style="margin:0; color:var(--muted);">The ultimate preventive health checkup.</p>
+          <div class="lx-package-price">$349 <span>/ package</span></div>
+          <p style="color:var(--primary-color); font-size:14px; font-weight:600;">Includes 90+ Parameters</p>
+          <ul class="lx-package-features">
+            <li><i class="bi bi-check-circle-fill"></i> Everything in Advanced</li>
+            <li><i class="bi bi-check-circle-fill"></i> Vitamin D & Vitamin B12</li>
+            <li><i class="bi bi-check-circle-fill"></i> Iron Studies Profile</li>
+            <li><i class="bi bi-check-circle-fill"></i> CRP (Inflammation Marker)</li>
+            <li><i class="bi bi-check-circle-fill"></i> Testosterone / Estrogen</li>
+            <li><i class="bi bi-check-circle-fill"></i> Dedicated Health Manager</li>
+          </ul>
+          <a href="contact.html" class="lx-btn secondary" style="width:100%; display:flex; justify-content:center;">Book Now</a>
+        </div>
+        
+      </div>
+    </div>
+  </section>
+  
+  <!-- FAQ Section -->
+  <section class="lx-section">
+    <div class="lx-container">
+      <div style="background: var(--surface-color); border: 1px solid var(--border-color); border-radius: 16px; padding: 48px; display: flex; gap: 48px; align-items: center; flex-wrap: wrap;">
+        <div style="flex: 1; min-width: 300px;">
+          <h2 class="lx-heading" style="margin-top:0;">Insurance & Billing Support</h2>
+          <p class="lx-copy" style="margin-bottom:24px;">We partner with most major health insurance providers. Our billing department will handle the claims process directly with your provider for covered tests and preventive packages.</p>
+          <ul class="lx-list" style="margin-bottom:32px;">
+            <li><i class="bi bi-shield-check"></i> Accepted by Medicare and Medicaid</li>
+            <li><i class="bi bi-credit-card"></i> HSA & FSA cards accepted</li>
+            <li><i class="bi bi-receipt"></i> Detailed itemized invoices provided</li>
+          </ul>
+          <a href="contact.html" class="lx-btn primary">Contact Billing Support</a>
+        </div>
+        <div style="flex: 1; min-width: 300px;">
+          <img src="../../assets/images/home1/services/doctor-consult.jpg" alt="Billing Support" style="border-radius: 12px; width: 100%; height: auto; object-fit: cover;">
+        </div>
       </div>
     </div>
   </section>

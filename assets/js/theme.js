@@ -30,11 +30,16 @@ document.addEventListener('DOMContentLoaded', () => {
           <a href="${rootPath}pages/${currentContext}/tests.html">Tests</a>
           <a href="${rootPath}pages/${currentContext}/packages.html">Packages</a>
           <a href="${rootPath}pages/${currentContext}/services.html">Services</a>
-          <a href="${rootPath}pages/${currentContext}/about.html">About</a>
           <a href="${rootPath}pages/${currentContext}/blog.html">Blog</a>
+          <details class="lx-home">
+            <summary>Pages <i class="bi bi-chevron-down"></i></summary>
+            <div class="lx-dropdown">
+              <a href="${rootPath}pages/${currentContext}/about.html"><i class="bi bi-info-circle"></i><span><b>About Us</b><small>Our mission & team</small></span></a>
+              <a href="${rootPath}pages/${currentContext}/pricing.html"><i class="bi bi-tags"></i><span><b>Pricing</b><small>Affordable packages</small></span></a>
+              <a href="${rootPath}pages/${currentContext}/faq.html"><i class="bi bi-question-circle"></i><span><b>FAQ</b><small>Common questions</small></span></a>
+            </div>
+          </details>
           <a href="${rootPath}pages/${currentContext}/contact.html">Contact</a>
-          <a href="${rootPath}pages/${currentContext}/faq.html">FAQ</a>
-          <a href="${rootPath}pages/${currentContext}/pricing.html">Pricing</a>
         </nav>
         <div class="lx-controls">
           <button class="lx-icon" data-search-open aria-label="Search tests and pages" aria-controls="lx-search-dialog"><i class="bi bi-search"></i></button>
@@ -77,11 +82,9 @@ document.addEventListener('DOMContentLoaded', () => {
             <span style="display:block; font-size:13px; color:var(--muted);">${getCurrentUser().email}</span>
           </div>
         </div>
-        <a href="${rootPath}pages/dashboard/patient/profile.html"><i class="bi bi-person"></i> My Profile</a>
         <a href="${rootPath}pages/dashboard/patient/bookings.html"><i class="bi bi-calendar-check"></i> My Bookings</a>
         <a href="${rootPath}pages/dashboard/patient/reports.html"><i class="bi bi-file-medical"></i> My Reports</a>
         <a href="${rootPath}pages/dashboard/patient/settings.html"><i class="bi bi-gear"></i> Settings</a>
-        <a href="#" data-auth-logout style="color:var(--danger-color, #ef4444);"><i class="bi bi-box-arrow-right"></i> Logout</a>
         <div style="border-top:1px solid var(--border-color, #e2e8f0); margin:8px 0;"></div>
         ` : ``}
         <a href="${rootPath}index.html">Home 1 - Trusted Diagnostics</a>
@@ -94,11 +97,16 @@ document.addEventListener('DOMContentLoaded', () => {
         <a href="${rootPath}pages/${currentContext}/contact.html">Contact</a>
         <a href="${rootPath}pages/${currentContext}/faq.html">FAQ</a>
         <a href="${rootPath}pages/${currentContext}/pricing.html">Pricing</a>
-        ${(typeof isAuthenticated === 'function' && isAuthenticated()) ? `` : `
-        <a href="${rootPath}pages/auth/login.html">Login</a>
-        <a href="${rootPath}pages/auth/register.html">Register</a>
-        `}
-        <a class="lx-book" href="${rootPath}pages/${currentContext}/tests.html">Book a Test</a>
+        <div style="display:flex; flex-direction:column; gap:10px; padding:20px 10px; border-top:1px solid var(--border-color, #e2e8f0); margin-top:10px;">
+          ${(typeof isAuthenticated === 'function' && isAuthenticated()) ? `
+          <a class="lx-btn secondary" href="${rootPath}pages/dashboard/patient/profile.html" style="width:100%; justify-content:center;">My Profile</a>
+          <a class="lx-btn" href="#" data-auth-logout style="width:100%; justify-content:center; background:var(--surface); color:var(--danger-color, #ef4444); border-color:var(--danger-color, #ef4444);">Logout</a>
+          ` : `
+          <a class="lx-btn secondary" href="${rootPath}pages/auth/login.html" style="width:100%; justify-content:center;">Login</a>
+          <a class="lx-btn primary" href="${rootPath}pages/auth/register.html" style="width:100%; justify-content:center;">Register</a>
+          `}
+          <a class="lx-btn primary" href="${rootPath}pages/${currentContext}/tests.html" style="width:100%; justify-content:center;">Book a Test</a>
+        </div>
       </nav>
       <div class="lx-search-dialog" id="lx-search-dialog" role="dialog" aria-modal="true" aria-labelledby="lx-search-title" hidden>
         <div class="lx-search-box">
@@ -327,7 +335,7 @@ document.addEventListener('DOMContentLoaded', () => {
               <ul class="lx-footer-list">
                 ${patientCareLinks}
                 <li><a href="${rootPath}pages/${currentContext}/faq.html">FAQs &rarr;</a></li>
-                <li><a href="${rootPath}pages/pricing.html">Pricing &rarr;</a></li>
+                <li><a href="${rootPath}pages/${currentContext}/packages.html">Pricing &rarr;</a></li>
                 <li><a href="${rootPath}pages/${currentContext}/contact.html">Support &rarr;</a></li>
               </ul>
             </div>
@@ -441,11 +449,54 @@ document.addEventListener('DOMContentLoaded', () => {
   const observer = new IntersectionObserver((entries) => {
     entries.forEach(entry => {
       if (entry.isIntersecting) {
-        entry.target.classList.add('in-view');
+        entry.target.classList.add('in-view', 'active');
         observer.unobserve(entry.target);
       }
     });
   }, { threshold: 0.1 });
   
-  document.querySelectorAll('.fade-up, .stagger-up, .lx-social a').forEach(el => observer.observe(el));
+  document.querySelectorAll('.reveal, .fade-up, .stagger-up, .lx-social a').forEach(el => observer.observe(el));
+
+  // Set Active Navbar State
+  const currentPath = location.pathname.toLowerCase();
+  const navLinks = document.querySelectorAll('.lx-nav > a, .lx-nav a, .lx-links > a, .lx-dropdown a, .lx-mobile a, .lx-nav-link, .lx-dropdown-item');
+  
+  navLinks.forEach(link => {
+    link.classList.remove('active');
+    const href = link.getAttribute('href');
+    if (!href || href === '#') return;
+
+    let isActive = false;
+    
+    if (href.includes('index.html') && (currentPath.endsWith('/') || currentPath.endsWith('index.html') || currentPath.endsWith('labarox'))) {
+        isActive = true;
+    } else if (href.includes('home-2.html') && currentPath.includes('home-2.html')) {
+        isActive = true;
+    } else if (href.includes('tests.html') && (currentPath.includes('tests.html') || currentPath.includes('/test-details/'))) {
+        isActive = true;
+    } else if (href.includes('packages.html') && (currentPath.includes('packages.html') || currentPath.includes('/packages/'))) {
+        isActive = true;
+    } else if (href.includes('services.html') && (currentPath.includes('services.html') || currentPath.includes('/service-details/'))) {
+        isActive = true;
+    } else if (href.includes('blog.html') && (currentPath.includes('blog.html') || currentPath.includes('/blog/'))) {
+        isActive = true;
+    } else if (href.includes('contact.html') && currentPath.includes('contact.html')) {
+        isActive = true;
+    } else if (href.includes('faq.html') && currentPath.includes('faq.html')) {
+        isActive = true;
+    } else if (href.includes('pricing.html') && currentPath.includes('pricing.html')) {
+        isActive = true;
+    } else if (href.includes('about.html') && currentPath.includes('about.html')) {
+        isActive = true;
+    }
+
+    if (isActive) {
+        link.classList.add('active');
+        const parentNav = link.closest('.lx-nav-item');
+        if (parentNav) {
+            const parentLink = parentNav.querySelector('.lx-nav-link');
+            if (parentLink) parentLink.classList.add('active');
+        }
+    }
+  });
 });

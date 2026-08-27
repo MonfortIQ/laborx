@@ -131,4 +131,57 @@ document.addEventListener('DOMContentLoaded', () => {
             revealObserver.observe(el);
         });
     }
+
+    // FormSubmit AJAX Handler
+    const contactForm = document.getElementById('contact-form');
+    if (contactForm) {
+        contactForm.addEventListener('submit', function (e) {
+            e.preventDefault();
+            
+            const submitBtn = contactForm.querySelector('button[type="submit"]');
+            const originalBtnText = submitBtn.innerText;
+            submitBtn.innerText = 'Sending...';
+            submitBtn.disabled = true;
+
+            const formData = new FormData(contactForm);
+
+            let actionUrl = contactForm.action;
+            if (actionUrl.includes('formsubmit.co') && !actionUrl.includes('/ajax/')) {
+                actionUrl = actionUrl.replace('formsubmit.co/', 'formsubmit.co/ajax/');
+            }
+
+            fetch(actionUrl, {
+                method: 'POST',
+                body: formData,
+                headers: {
+                    'Accept': 'application/json'
+                }
+            })
+            .then(response => response.json())
+            .then(data => {
+                if (data.success || data.ok || (data.status === 'success')) {
+                    contactForm.reset();
+                    submitBtn.innerText = 'Message Sent!';
+                    submitBtn.style.backgroundColor = 'var(--success-color, #28a745)';
+                    submitBtn.style.color = '#fff';
+                } else {
+                    submitBtn.innerText = 'Error Sending';
+                }
+                setTimeout(() => {
+                    submitBtn.innerText = originalBtnText;
+                    submitBtn.disabled = false;
+                    submitBtn.style.backgroundColor = '';
+                    submitBtn.style.color = '';
+                }, 4000);
+            })
+            .catch(error => {
+                submitBtn.innerText = 'Network Error';
+                setTimeout(() => {
+                    submitBtn.innerText = originalBtnText;
+                    submitBtn.disabled = false;
+                }, 4000);
+            });
+        });
+    }
+
 });

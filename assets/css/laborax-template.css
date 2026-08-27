@@ -10,7 +10,7 @@ body { overflow-x: hidden; margin: 0; }
 a { color: inherit; }
 img { max-width: 100%; display: block; }
 .lx-shell { background: rgb(var(--bg-secondary)); color: rgb(var(--text-primary)); min-height: 100vh; }
-.lx-main { padding-top: var(--lx-header-offset); }
+.lx-main { padding-top: 0; }
 .lx-section { padding: clamp(56px, 8vw, 104px) 20px; }
 .lx-band { background: rgb(var(--surface)); border-block: 1px solid rgb(var(--border-primary)); }
 .lx-container { width: min(1180px, 100%); margin-inline: auto; }
@@ -828,4 +828,33 @@ img { max-width: 100%; display: block; }
   .lx-hero-actions .lx-btn {
     width: 100%;
   }
+}
+
+
+
+/* Curved Pill Highlight Nav State (Adaptive Light/Dark) */
+.lx-links > a, .lx-home summary {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 8px 16px;
+    border-radius: 999px;
+    transition: all 0.2s ease;
+    height: 36px;
+    line-height: 1;
+}
+.lx-links > a.active {
+    background-color: rgb(var(--text-primary)) !important;
+    color: rgb(var(--bg-primary)) !important;
+    font-weight: 700;
+}
+.lx-links > a:hover:not(.active), .lx-home summary:hover {
+    background: rgba(var(--text-primary), 0.08);
+}
+.lx-home {
+    display: flex;
+    align-items: center;
+}
+.lx-header-content {
+    align-items: center;
 }

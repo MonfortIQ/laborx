@@ -4,501 +4,419 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>LaboraX | Trusted Diagnostic Laboratory HTML Template</title>
-  <meta name="description" content="Premium multipage diagnostic laboratory template with tests, packages, home sample collection, reports, doctors, dark mode, RTL, dashboards, and responsive pages.">
+  <meta name="description" content="Precision diagnostics you can trust. Routine blood tests, comprehensive health screenings, and accurate reports.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
   <link rel="stylesheet" href="assets/css/style.css">
   <link rel="stylesheet" href="assets/css/laborax-template.css">
-  <link rel="icon" type="image/x-icon" href="assets/images/logo/favicon.jpg">
+  
+  <link rel="icon" type="image/x-icon" href="assets/images/logo/favicon.ico">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/images/logo/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="assets/images/logo/favicon-16x16.png">
+  <link rel="apple-touch-icon" href="assets/images/logo/apple-touch-icon.png">
 </head>
 <body class="lx-shell">
   <header id="main-header"></header>
   <main class="lx-main">
-<section class="lx-hero">
-  <div class="lx-container lx-two">
-    <div class="reveal">
-      <span class="lx-eyebrow"><i class="bi bi-shield-check"></i>Trusted Diagnostic Care</span>
-      <h1 class="lx-title">Your Health.<br><span style="color:rgb(var(--primary-red))">Our Precision.</span></h1>
-      <p class="lx-copy">Trusted diagnostic testing with accurate results, convenient home sample collection, and experienced laboratory professionals.</p>
-      <div class="lx-actions">
-        <a class="lx-btn primary" href="pages/home1/tests.html">Book a Test<i class="bi bi-arrow-right"></i></a>
-        <a class="lx-btn secondary" href="pages/home1/packages.html">Explore Packages</a>
+
+    <!-- HERO SECTION -->
+    <section class="lx-hero">
+      <div class="lx-container lx-two">
+        <div class="reveal">
+          <span class="lx-eyebrow"><i class="bi bi-shield-check"></i>Trusted Diagnostics for Better Health</span>
+          <h1 class="lx-title">Precision Diagnostics<br><span style="color:rgb(var(--primary-red))">You Can Trust.</span></h1>
+          <p class="lx-copy">From routine blood tests to comprehensive health screenings, LaboraX connects you with reliable diagnostic services and clear, accurate health reports.</p>
+          <div class="lx-actions">
+            <a class="lx-btn primary" href="pages/booking/book-test.html">Book a Test<i class="bi bi-arrow-right"></i></a>
+            <a class="lx-btn secondary" href="pages/home1/packages.html">Explore Health Packages</a>
+          </div>
+          <div class="lx-stats">
+            <div class="lx-stat"><strong>50K+</strong><span>Patients Served</span></div>
+            <div class="lx-stat"><strong>150K+</strong><span>Tests Completed</span></div>
+            <div class="lx-stat"><strong>98.7%</strong><span>Report Accuracy</span></div>
+            <div class="lx-stat"><strong>4.9/5</strong><span>Patient Rating</span></div>
+          </div>
+        </div>
+        <figure class="lx-media reveal fade-left">
+          <img src="assets/images/home1/hero/home1-laboratory-hero.jpg" alt="A professional laboratory technician handling blood samples inside a modern diagnostic laboratory">
+        </figure>
       </div>
-      <div class="lx-stats"><div class="lx-stat"><strong>50K+</strong><span>Patients Served</span></div><div class="lx-stat"><strong>150K+</strong><span>Tests Completed</span></div><div class="lx-stat"><strong>98.7%</strong><span>Report Accuracy</span></div><div class="lx-stat"><strong>4.9/5</strong><span>Patient Rating</span></div></div>
-    </div>
-    <figure class="lx-media reveal fade-left">
-      <img src="https://images.unsplash.com/photo-1579154204601-01588f351e67?auto=format&fit=crop&w=1400&q=85" alt="Laboratory technician preparing blood samples in a modern diagnostic lab">
-    </figure>
-  </div>
-</section>
-  <section class="lx-section lx-band">
-    <div class="lx-container">
-      
-<div class="lx-section-head reveal">
-  <div>
-    <span class="lx-eyebrow">Find the Right Test</span>
-    <h2 class="lx-heading">Search blood tests, thyroid, vitamin, diabetes...</h2>
-    <p class="lx-copy">Start with a test name, symptom, or package category and jump directly into booking.</p>
-  </div>
-</div>
-      <div class="lx-search lx-autocomplete reveal">
-        <input class="lx-input" data-filter-input="home-tests" type="search" placeholder="Search CBC, HbA1c, Vitamin D, Lipid Profile">
-        <a class="lx-btn primary" href="pages/home1/tests.html">Search Tests</a>
-        <div class="lx-suggestions" data-home-suggestions></div>
+    </section>
+
+    <!-- QUICK TEST SEARCH -->
+    <section class="lx-section lx-band">
+      <div class="lx-container">
+        <div class="lx-section-head reveal">
+          <span class="lx-eyebrow">Search Tests</span>
+          <h2 class="lx-heading">Find the Right Test for You</h2>
+        </div>
+        <div class="lx-search lx-autocomplete reveal">
+          <input class="lx-input" type="search" placeholder="Search CBC, HbA1c, Vitamin D...">
+          <a class="lx-btn primary" href="pages/home1/tests.html">Search Tests</a>
+        </div>
+        <div class="lx-chip-row reveal" style="margin-top:20px; justify-content:center;">
+          <a href="pages/home1/tests.html" class="lx-chip"><i class="bi bi-droplet"></i> Blood Tests</a>
+          <a href="pages/home1/tests.html" class="lx-chip"><i class="bi bi-activity"></i> Diabetes</a>
+          <a href="pages/home1/tests.html" class="lx-chip"><i class="bi bi-diagram-3"></i> Thyroid</a>
+          <a href="pages/home1/tests.html" class="lx-chip"><i class="bi bi-brightness-high"></i> Vitamins</a>
+          <a href="pages/home1/tests.html" class="lx-chip"><i class="bi bi-lungs"></i> Liver</a>
+          <a href="pages/home1/tests.html" class="lx-chip"><i class="bi bi-virus"></i> Kidney</a>
+          <a href="pages/home1/tests.html" class="lx-chip"><i class="bi bi-heart-pulse"></i> Heart</a>
+          <a href="pages/home1/tests.html" class="lx-chip"><i class="bi bi-gender-ambiguous"></i> Hormones</a>
+        </div>
       </div>
-      <div class="lx-chip-row reveal"><span class="lx-chip">CBC</span><span class="lx-chip">Thyroid</span><span class="lx-chip">Vitamin D</span><span class="lx-chip">HbA1c</span><span class="lx-chip">Lipid Profile</span></div>
-    </div>
-  </section>
-  <section class="lx-section">
-    <div class="lx-container">
-      
-<div class="lx-section-head reveal">
-  <div>
-    <span class="lx-eyebrow">Popular Packages</span>
-    <h2 class="lx-heading">Popular Health Packages</h2>
-    <p class="lx-copy">Curated preventive checkups with transparent pricing, preparation guidance, and fast report timelines.</p>
-  </div>
-</div>
-      <div class="lx-grid" style="--cols:4">
-<article class="lx-card reveal" data-filter-card data-category="all" style="transition-delay:0ms">
-  <div class="lx-media" style="min-height:190px;margin:-8px -8px 18px"><img src="https://images.unsplash.com/photo-1581595219315-a187dd40c322?auto=format&fit=crop&w=1200&q=85" alt="Complete Health Checkup" loading="lazy" style="min-height:190px"></div>
-  <h3>Complete Health Checkup</h3>
-  <p>78 parameters covering blood, heart, liver, kidney, thyroid, vitamins, and diabetes risk.</p>
-  <div class="lx-chip-row"><span class="lx-chip">Popular</span><span class="lx-chip">12-24 hr report</span></div>
-  <div class="lx-price"><strong>$149</strong><del>$229</del></div>
-  <div class="lx-page-actions"><a class="lx-btn secondary" href="pages/home1/packages/complete-health.html">View Details</a></div>
-</article>
-<article class="lx-card reveal" data-filter-card data-category="all" style="transition-delay:70ms">
-  <div class="lx-media" style="min-height:190px;margin:-8px -8px 18px"><img src="https://images.unsplash.com/photo-1584515933487-779824d29309?auto=format&fit=crop&w=1200&q=85" alt="Diabetes Care Package" loading="lazy" style="min-height:190px"></div>
-  <h3>Diabetes Care Package</h3>
-  <p>Fasting glucose, HbA1c, insulin resistance markers, kidney health, and lipid risk review.</p>
-  <div class="lx-chip-row"><span class="lx-chip">Diabetes</span><span class="lx-chip">12-24 hr report</span></div>
-  <div class="lx-price"><strong>$79</strong><del>$119</del></div>
-  <div class="lx-page-actions"><a class="lx-btn secondary" href="pages/home1/packages/complete-health.html">View Details</a></div>
-</article>
-<article class="lx-card reveal" data-filter-card data-category="all" style="transition-delay:140ms">
-  <div class="lx-media" style="min-height:190px;margin:-8px -8px 18px"><img src="https://images.unsplash.com/photo-1582719471384-894fbb16e074?auto=format&fit=crop&w=1200&q=85" alt="Heart Health Screening" loading="lazy" style="min-height:190px"></div>
-  <h3>Heart Health Screening</h3>
-  <p>Lipid profile, hs-CRP, liver enzymes, kidney function, and cardiac risk indicators.</p>
-  <div class="lx-chip-row"><span class="lx-chip">Heart</span><span class="lx-chip">12-24 hr report</span></div>
-  <div class="lx-price"><strong>$99</strong><del>$159</del></div>
-  <div class="lx-page-actions"><a class="lx-btn secondary" href="pages/home1/packages/complete-health.html">View Details</a></div>
-</article>
-<article class="lx-card reveal" data-filter-card data-category="all" style="transition-delay:210ms">
-  <div class="lx-media" style="min-height:190px;margin:-8px -8px 18px"><img src="https://images.unsplash.com/photo-1559839734-2b71ea197ec2?auto=format&fit=crop&w=1200&q=85" alt="Women's Wellness Package" loading="lazy" style="min-height:190px"></div>
-  <h3>Women's Wellness Package</h3>
-  <p>Hormones, thyroid, anemia, vitamin D, calcium, and preventive health essentials.</p>
-  <div class="lx-chip-row"><span class="lx-chip">Women</span><span class="lx-chip">12-24 hr report</span></div>
-  <div class="lx-price"><strong>$129</strong><del>$199</del></div>
-  <div class="lx-page-actions"><a class="lx-btn secondary" href="pages/home1/packages/complete-health.html">View Details</a></div>
-</article>
-<article class="lx-card reveal" data-filter-card data-category="all" style="transition-delay:280ms">
-  <div class="lx-media" style="min-height:190px;margin:-8px -8px 18px"><img src="https://images.unsplash.com/photo-1581595219315-a187dd40c322?auto=format&fit=crop&w=1200&q=85" alt="Men's Health Package" loading="lazy" style="min-height:190px"></div>
-  <h3>Men's Health Package</h3>
-  <p>Metabolic, liver, kidney, testosterone, lipid, and inflammation markers for active men.</p>
-  <div class="lx-chip-row"><span class="lx-chip">Men</span><span class="lx-chip">12-24 hr report</span></div>
-  <div class="lx-price"><strong>$119</strong><del>$179</del></div>
-  <div class="lx-page-actions"><a class="lx-btn secondary" href="pages/home1/packages/complete-health.html">View Details</a></div>
-</article>
-<article class="lx-card reveal" data-filter-card data-category="all" style="transition-delay:350ms">
-  <div class="lx-media" style="min-height:190px;margin:-8px -8px 18px"><img src="https://images.unsplash.com/photo-1584515933487-779824d29309?auto=format&fit=crop&w=1200&q=85" alt="Senior Citizen Health Package" loading="lazy" style="min-height:190px"></div>
-  <h3>Senior Citizen Health Package</h3>
-  <p>Organ function, arthritis markers, diabetes, vitamins, urine analysis, and heart risk.</p>
-  <div class="lx-chip-row"><span class="lx-chip">Senior</span><span class="lx-chip">12-24 hr report</span></div>
-  <div class="lx-price"><strong>$139</strong><del>$219</del></div>
-  <div class="lx-page-actions"><a class="lx-btn secondary" href="pages/home1/packages/complete-health.html">View Details</a></div>
-</article>
-<article class="lx-card reveal" data-filter-card data-category="all" style="transition-delay:350ms">
-  <div class="lx-media" style="min-height:190px;margin:-8px -8px 18px"><img src="https://images.unsplash.com/photo-1582719471384-894fbb16e074?auto=format&fit=crop&w=1200&q=85" alt="Vitamin & Nutrition Package" loading="lazy" style="min-height:190px"></div>
-  <h3>Vitamin & Nutrition Package</h3>
-  <p>Vitamin D, B12, iron profile, calcium, magnesium, and nutrition-linked biomarkers.</p>
-  <div class="lx-chip-row"><span class="lx-chip">Nutrition</span><span class="lx-chip">12-24 hr report</span></div>
-  <div class="lx-price"><strong>$69</strong><del>$109</del></div>
-  <div class="lx-page-actions"><a class="lx-btn secondary" href="pages/home1/packages/complete-health.html">View Details</a></div>
-</article>
-<article class="lx-card reveal" data-filter-card data-category="all" style="transition-delay:350ms">
-  <div class="lx-media" style="min-height:190px;margin:-8px -8px 18px"><img src="https://images.unsplash.com/photo-1559839734-2b71ea197ec2?auto=format&fit=crop&w=1200&q=85" alt="Thyroid Wellness Package" loading="lazy" style="min-height:190px"></div>
-  <h3>Thyroid Wellness Package</h3>
-  <p>T3, T4, TSH, antibody screening, vitamin D, and metabolic wellness markers.</p>
-  <div class="lx-chip-row"><span class="lx-chip">Thyroid</span><span class="lx-chip">12-24 hr report</span></div>
-  <div class="lx-price"><strong>$59</strong><del>$89</del></div>
-  <div class="lx-page-actions"><a class="lx-btn secondary" href="pages/home1/packages/complete-health.html">View Details</a></div>
-</article></div>
-    </div>
-  </section>
-  <section class="lx-section lx-band">
-    <div class="lx-container">
-      
-<div class="lx-section-head reveal">
-  <div>
-    <span class="lx-eyebrow">Why Thousands Trust LaboraX</span>
-    <h2 class="lx-heading">Diagnostic care without guesswork.</h2>
-    <p class="lx-copy">Every sample moves through trained collection, certified processing, quality review, and secure digital delivery.</p>
-  </div>
-</div>
-      <div class="lx-grid" style="--cols:3">
-<article class="lx-card reveal" data-filter-card data-category="all" style="transition-delay:0ms">
-  <span class="lx-iconbox"><i class="bi bi-bullseye"></i></span>
-  <h3>Accurate Results</h3>
-  <p>Validated workflows and repeated quality checks before reports are released.</p>
-  
-  
-  
-</article>
-<article class="lx-card reveal" data-filter-card data-category="all" style="transition-delay:70ms">
-  <span class="lx-iconbox"><i class="bi bi-patch-check"></i></span>
-  <h3>Certified Laboratories</h3>
-  <p>Accreditation-ready sections for quality badges and certification details.</p>
-  
-  
-  
-</article>
-<article class="lx-card reveal" data-filter-card data-category="all" style="transition-delay:140ms">
-  <span class="lx-iconbox"><i class="bi bi-person-heart"></i></span>
-  <h3>Experienced Professionals</h3>
-  <p>Phlebotomists, lab technologists, and doctors presented with realistic profiles.</p>
-  
-  
-  
-</article>
-<article class="lx-card reveal" data-filter-card data-category="all" style="transition-delay:210ms">
-  <span class="lx-iconbox"><i class="bi bi-clock-history"></i></span>
-  <h3>Fast Reports</h3>
-  <p>Most routine reports are designed around same-day or next-day delivery.</p>
-  
-  
-  
-</article>
-<article class="lx-card reveal" data-filter-card data-category="all" style="transition-delay:280ms">
-  <span class="lx-iconbox"><i class="bi bi-house-heart"></i></span>
-  <h3>Home Sample Collection</h3>
-  <p>Flexible slots, digital confirmation, and trained technicians at the doorstep.</p>
-  
-  
-  
-</article>
-<article class="lx-card reveal" data-filter-card data-category="all" style="transition-delay:350ms">
-  <span class="lx-iconbox"><i class="bi bi-file-lock2"></i></span>
-  <h3>Secure Reports</h3>
-  <p>Patient dashboard pages support report history, prescriptions, and profile workflows.</p>
-  
-  
-  
-</article></div>
-    </div>
-  </section>
-  <section class="lx-section">
-    <div class="lx-container">
-      
-<div class="lx-section-head reveal">
-  <div>
-    <span class="lx-eyebrow">How It Works</span>
-    <h2 class="lx-heading">Four simple steps from booking to report.</h2>
-    <p class="lx-copy">A patient-first journey designed for families, professionals, and senior citizens.</p>
-  </div>
-</div>
-      <div class="lx-steps">
-        <article class="lx-card lx-step reveal"><h3>Choose Your Test</h3><p>Search tests or select a preventive package.</p></article><article class="lx-card lx-step reveal"><h3>Book Your Slot</h3><p>Pick a lab visit at your preferred time.</p></article><article class="lx-card lx-step reveal"><h3>Sample Collection</h3><p>A trained technician collects samples safely.</p></article><article class="lx-card lx-step reveal"><h3>Receive Your Report</h3><p>Download verified reports from your dashboard.</p></article>
+    </section>
+
+    <!-- WHY CHOOSE US -->
+    <section class="lx-section">
+      <div class="lx-container lx-two">
+        <figure class="lx-media reveal">
+          <img src="assets/images/home1/about/quality.jpg" alt="Medical laboratory technician working with advanced equipment">
+        </figure>
+        <div class="reveal fade-left">
+          <span class="lx-eyebrow">Why Choose Us</span>
+          <h2 class="lx-heading">Diagnostics Built Around Your Health</h2>
+          <ul class="lx-list" style="margin-top:24px;">
+            <li><strong><i class="bi bi-building"></i> Certified Laboratories</strong><br><span class="lx-muted">Reliable testing through trusted diagnostic facilities.</span></li>
+            <li><strong><i class="bi bi-bullseye"></i> Accurate Results</strong><br><span class="lx-muted">Advanced equipment and quality-controlled testing.</span></li>
+            <li><strong><i class="bi bi-lightning-charge"></i> Fast Reporting</strong><br><span class="lx-muted">Get reports quickly through our streamlined process.</span></li>
+            <li><strong><i class="bi bi-person-badge"></i> Expert Support</strong><br><span class="lx-muted">Get guidance throughout your diagnostic journey.</span></li>
+          </ul>
+          <a href="pages/home1/about.html" class="lx-btn secondary" style="margin-top:24px;">Learn About Us</a>
+        </div>
       </div>
-    </div>
-  </section>
-  <section class="lx-section lx-band">
-    <div class="lx-container lx-two">
-      <div class="reveal">
-        <span class="lx-eyebrow">Home Sample Collection</span>
-        <h2 class="lx-heading">Healthcare at Your Doorstep</h2>
-        <p class="lx-copy">Professional technicians visit the patient's home with sterile equipment, digital confirmation, and rapid lab handoff.</p>
-        <ul class="lx-list"><li><i class="bi bi-check-circle"></i>Flexible appointment windows</li><li><i class="bi bi-check-circle"></i>Safe sample collection</li><li><i class="bi bi-check-circle"></i>Trained technician assignment</li><li><i class="bi bi-check-circle"></i>Digital confirmation and tracking</li></ul>
-        <div class="lx-page-actions"><a class="lx-btn primary" href="pages/home1/contact.html">Book Appointment</a></div>
+    </section>
+
+    <!-- POPULAR TESTS -->
+    <section class="lx-section lx-band">
+      <div class="lx-container">
+        <div class="lx-section-head reveal">
+          <span class="lx-eyebrow">Diagnostic Tests</span>
+          <h2 class="lx-heading">Popular Diagnostic Tests</h2>
+        </div>
+        <div class="lx-grid lx-four">
+          <!-- 8 Cards -->
+          <a href="pages/home1/tests/test-detail.html" class="lx-card reveal stagger-up">
+            <div class="lx-media"><img src="assets/images/home1/tests/cbc.jpg" alt="Complete Blood Count test"></div>
+            <h3>Complete Blood Count</h3>
+            <p>A standard test measuring your overall health.</p>
+            <div class="lx-card-footer"><span class="lx-price">$25</span><span class="lx-link">View Details</span></div>
+          </a>
+          <a href="pages/home1/tests/test-detail.html" class="lx-card reveal stagger-up">
+            <div class="lx-media"><img src="assets/images/home1/tests/thyroid.jpg" alt="Thyroid Profile test"></div>
+            <h3>Thyroid Profile</h3>
+            <p>Assess your thyroid gland function and levels.</p>
+            <div class="lx-card-footer"><span class="lx-price">$40</span><span class="lx-link">View Details</span></div>
+          </a>
+          <a href="pages/home1/tests/test-detail.html" class="lx-card reveal stagger-up">
+            <div class="lx-media"><img src="assets/images/home1/tests/hba1c.jpg" alt="HbA1c test"></div>
+            <h3>HbA1c</h3>
+            <p>Measure average blood sugar levels for diabetes.</p>
+            <div class="lx-card-footer"><span class="lx-price">$30</span><span class="lx-link">View Details</span></div>
+          </a>
+          <a href="pages/home1/tests/test-detail.html" class="lx-card reveal stagger-up">
+            <div class="lx-media"><img src="assets/images/home1/tests/vitamin.jpg" alt="Vitamin D test"></div>
+            <h3>Vitamin D</h3>
+            <p>Check vitamin D levels for bone and immune health.</p>
+            <div class="lx-card-footer"><span class="lx-price">$45</span><span class="lx-link">View Details</span></div>
+          </a>
+          <a href="pages/home1/tests/test-detail.html" class="lx-card reveal stagger-up">
+            <div class="lx-media"><img src="assets/images/home1/tests/lipid.jpg" alt="Lipid Profile test"></div>
+            <h3>Lipid Profile</h3>
+            <p>Check cholesterol levels for cardiovascular health.</p>
+            <div class="lx-card-footer"><span class="lx-price">$35</span><span class="lx-link">View Details</span></div>
+          </a>
+          <a href="pages/home1/tests/test-detail.html" class="lx-card reveal stagger-up">
+            <div class="lx-media"><img src="assets/images/home1/tests/liver.jpg" alt="Liver Function test"></div>
+            <h3>Liver Function Test</h3>
+            <p>Comprehensive test for liver health and enzymes.</p>
+            <div class="lx-card-footer"><span class="lx-price">$50</span><span class="lx-link">View Details</span></div>
+          </a>
+          <a href="pages/home1/tests/test-detail.html" class="lx-card reveal stagger-up">
+            <div class="lx-media"><img src="assets/images/home1/tests/kidney.jpg" alt="Kidney Function test"></div>
+            <h3>Kidney Function Test</h3>
+            <p>Evaluate how well your kidneys are filtering blood.</p>
+            <div class="lx-card-footer"><span class="lx-price">$50</span><span class="lx-link">View Details</span></div>
+          </a>
+          <a href="pages/home1/tests/test-detail.html" class="lx-card reveal stagger-up">
+            <div class="lx-media"><img src="assets/images/home1/tests/iron.jpg" alt="Iron Profile test"></div>
+            <h3>Iron Profile</h3>
+            <p>Check iron levels to diagnose anemia or overload.</p>
+            <div class="lx-card-footer"><span class="lx-price">$35</span><span class="lx-link">View Details</span></div>
+          </a>
+        </div>
       </div>
-      <figure class="lx-media reveal fade-left"><img src="https://images.unsplash.com/photo-1584515933487-779824d29309?auto=format&fit=crop&w=1200&q=85" alt="Healthcare professional assisting a patient during home sample collection" loading="lazy"></figure>
-    </div>
-  </section>
-  <section class="lx-section">
-    <div class="lx-container">
-      
-<div class="lx-section-head reveal">
-  <div>
-    <span class="lx-eyebrow">Popular Tests</span>
-    <h2 class="lx-heading">Large Diagnostic Test Directory</h2>
-    <p class="lx-copy">Preview routine, preventive, and specialist tests with report times and prices.</p>
-  </div>
-</div>
-      <div class="lx-grid" style="--cols:4">
-<article class="lx-card reveal" data-filter-card data-category="blood" style="transition-delay:0ms">
-  <span class="lx-iconbox"><i class="bi bi-droplet-half"></i></span>
-  <h3>CBC</h3>
-  <p>Complete blood count for infection, anemia, and general wellness screening.</p>
-  <div class="lx-chip-row"><span class="lx-chip">blood</span><span class="lx-chip">6 hours</span></div>
-  <div class="lx-price"><strong>$18</strong></div>
-  <div class="lx-page-actions"><a class="lx-btn secondary" href="pages/home1/services/blood-testing.html">Book Test</a></div>
-</article>
-<article class="lx-card reveal" data-filter-card data-category="diabetes" style="transition-delay:70ms">
-  <span class="lx-iconbox"><i class="bi bi-droplet-half"></i></span>
-  <h3>HbA1c</h3>
-  <p>Three-month average blood glucose marker for diabetes monitoring.</p>
-  <div class="lx-chip-row"><span class="lx-chip">diabetes</span><span class="lx-chip">12 hours</span></div>
-  <div class="lx-price"><strong>$24</strong></div>
-  <div class="lx-page-actions"><a class="lx-btn secondary" href="pages/home1/services/blood-testing.html">Book Test</a></div>
-</article>
-<article class="lx-card reveal" data-filter-card data-category="diabetes" style="transition-delay:140ms">
-  <span class="lx-iconbox"><i class="bi bi-droplet-half"></i></span>
-  <h3>Blood Sugar</h3>
-  <p>Fasting and post-meal glucose screening with digital report.</p>
-  <div class="lx-chip-row"><span class="lx-chip">diabetes</span><span class="lx-chip">6 hours</span></div>
-  <div class="lx-price"><strong>$12</strong></div>
-  <div class="lx-page-actions"><a class="lx-btn secondary" href="pages/home1/services/blood-testing.html">Book Test</a></div>
-</article>
-<article class="lx-card reveal" data-filter-card data-category="heart" style="transition-delay:210ms">
-  <span class="lx-iconbox"><i class="bi bi-droplet-half"></i></span>
-  <h3>Lipid Profile</h3>
-  <p>Cholesterol, HDL, LDL, VLDL, and triglyceride assessment.</p>
-  <div class="lx-chip-row"><span class="lx-chip">heart</span><span class="lx-chip">12 hours</span></div>
-  <div class="lx-price"><strong>$32</strong></div>
-  <div class="lx-page-actions"><a class="lx-btn secondary" href="pages/home1/services/blood-testing.html">Book Test</a></div>
-</article>
-<article class="lx-card reveal" data-filter-card data-category="thyroid" style="transition-delay:280ms">
-  <span class="lx-iconbox"><i class="bi bi-droplet-half"></i></span>
-  <h3>Thyroid Profile</h3>
-  <p>T3, T4, and TSH for thyroid function monitoring.</p>
-  <div class="lx-chip-row"><span class="lx-chip">thyroid</span><span class="lx-chip">12 hours</span></div>
-  <div class="lx-price"><strong>$28</strong></div>
-  <div class="lx-page-actions"><a class="lx-btn secondary" href="pages/home1/services/blood-testing.html">Book Test</a></div>
-</article>
-<article class="lx-card reveal" data-filter-card data-category="vitamin" style="transition-delay:350ms">
-  <span class="lx-iconbox"><i class="bi bi-droplet-half"></i></span>
-  <h3>Vitamin D</h3>
-  <p>25-OH vitamin D level for bone, immunity, and fatigue concerns.</p>
-  <div class="lx-chip-row"><span class="lx-chip">vitamin</span><span class="lx-chip">24 hours</span></div>
-  <div class="lx-price"><strong>$42</strong></div>
-  <div class="lx-page-actions"><a class="lx-btn secondary" href="pages/home1/services/blood-testing.html">Book Test</a></div>
-</article>
-<article class="lx-card reveal" data-filter-card data-category="vitamin" style="transition-delay:350ms">
-  <span class="lx-iconbox"><i class="bi bi-droplet-half"></i></span>
-  <h3>Vitamin B12</h3>
-  <p>B12 level assessment for fatigue, nerve health, and nutrition.</p>
-  <div class="lx-chip-row"><span class="lx-chip">vitamin</span><span class="lx-chip">24 hours</span></div>
-  <div class="lx-price"><strong>$38</strong></div>
-  <div class="lx-page-actions"><a class="lx-btn secondary" href="pages/home1/services/blood-testing.html">Book Test</a></div>
-</article>
-<article class="lx-card reveal" data-filter-card data-category="liver" style="transition-delay:350ms">
-  <span class="lx-iconbox"><i class="bi bi-droplet-half"></i></span>
-  <h3>Liver Function</h3>
-  <p>Bilirubin, SGOT, SGPT, protein, and enzyme panel.</p>
-  <div class="lx-chip-row"><span class="lx-chip">liver</span><span class="lx-chip">12 hours</span></div>
-  <div class="lx-price"><strong>$35</strong></div>
-  <div class="lx-page-actions"><a class="lx-btn secondary" href="pages/home1/services/blood-testing.html">Book Test</a></div>
-</article>
-<article class="lx-card reveal" data-filter-card data-category="kidney" style="transition-delay:350ms">
-  <span class="lx-iconbox"><i class="bi bi-droplet-half"></i></span>
-  <h3>Kidney Function</h3>
-  <p>Creatinine, urea, uric acid, electrolytes, and eGFR.</p>
-  <div class="lx-chip-row"><span class="lx-chip">kidney</span><span class="lx-chip">12 hours</span></div>
-  <div class="lx-price"><strong>$35</strong></div>
-  <div class="lx-page-actions"><a class="lx-btn secondary" href="pages/home1/services/blood-testing.html">Book Test</a></div>
-</article>
-<article class="lx-card reveal" data-filter-card data-category="blood" style="transition-delay:350ms">
-  <span class="lx-iconbox"><i class="bi bi-droplet-half"></i></span>
-  <h3>Iron Profile</h3>
-  <p>Iron, ferritin, TIBC, and transferrin saturation assessment.</p>
-  <div class="lx-chip-row"><span class="lx-chip">blood</span><span class="lx-chip">24 hours</span></div>
-  <div class="lx-price"><strong>$46</strong></div>
-  <div class="lx-page-actions"><a class="lx-btn secondary" href="pages/home1/services/blood-testing.html">Book Test</a></div>
-</article>
-<article class="lx-card reveal" data-filter-card data-category="hormone" style="transition-delay:350ms">
-  <span class="lx-iconbox"><i class="bi bi-droplet-half"></i></span>
-  <h3>Hormone Tests</h3>
-  <p>Targeted hormone panels for fertility and metabolic health.</p>
-  <div class="lx-chip-row"><span class="lx-chip">hormone</span><span class="lx-chip">24 hours</span></div>
-  <div class="lx-price"><strong>$58</strong></div>
-  <div class="lx-page-actions"><a class="lx-btn secondary" href="pages/home1/services/blood-testing.html">Book Test</a></div>
-</article>
-<article class="lx-card reveal" data-filter-card data-category="kidney" style="transition-delay:350ms">
-  <span class="lx-iconbox"><i class="bi bi-droplet-half"></i></span>
-  <h3>Urine Analysis</h3>
-  <p>Routine microscopy and chemical urine screening.</p>
-  <div class="lx-chip-row"><span class="lx-chip">kidney</span><span class="lx-chip">6 hours</span></div>
-  <div class="lx-price"><strong>$15</strong></div>
-  <div class="lx-page-actions"><a class="lx-btn secondary" href="pages/home1/services/blood-testing.html">Book Test</a></div>
-</article></div>
-    </div>
-  </section>
-  <section class="lx-section lx-band">
-    <div class="lx-container lx-two">
-      <figure class="lx-media reveal"><img src="https://images.unsplash.com/photo-1582719471384-894fbb16e074?auto=format&fit=crop&w=1200&q=85" alt="Advanced laboratory equipment for diagnostic quality control" loading="lazy"></figure>
-      <div class="reveal fade-left">
-        <span class="lx-eyebrow">Laboratory Quality</span>
-        <h2 class="lx-heading">Precision You Can Trust</h2>
-        <p class="lx-copy">Certified labs, quality controls, advanced equipment, and experienced technicians form the backbone of every LaboraX report.</p>
-        <div class="lx-grid" style="--cols:2;margin-top:22px"><div class="lx-card"><span class="lx-iconbox"><i class="bi bi-check2"></i></span><h3>Certified Labs</h3></div><div class="lx-card"><span class="lx-iconbox"><i class="bi bi-check2"></i></span><h3>Quality Control</h3></div><div class="lx-card"><span class="lx-iconbox"><i class="bi bi-check2"></i></span><h3>Advanced Equipment</h3></div><div class="lx-card"><span class="lx-iconbox"><i class="bi bi-check2"></i></span><h3>Experienced Technicians</h3></div></div>
+    </section>
+
+    <!-- HEALTH PACKAGES -->
+    <section class="lx-section">
+      <div class="lx-container">
+        <div class="lx-section-head reveal">
+          <span class="lx-eyebrow">Health Packages</span>
+          <h2 class="lx-heading">Complete Health Checks, Made Simple</h2>
+        </div>
+        <div class="lx-grid lx-three">
+          <div class="lx-card lx-pricing-card reveal stagger-up">
+            <div class="lx-media"><img src="assets/images/home1/packages/essential.jpg" alt="Essential Health Check"></div>
+            <h3>Essential Health Check</h3>
+            <div class="lx-price-block"><span class="lx-price">$99</span></div>
+            <p>A fundamental checkup for baseline health monitoring.</p>
+            <ul class="lx-list">
+              <li><i class="bi bi-check2"></i> Complete Blood Count</li>
+              <li><i class="bi bi-check2"></i> Blood Sugar (Fasting)</li>
+              <li><i class="bi bi-check2"></i> Lipid Profile</li>
+            </ul>
+            <div class="lx-actions"><a href="pages/home1/packages/package-detail.html" class="lx-btn secondary">View Details</a><a href="pages/booking/book-test.html" class="lx-btn primary">Book Now</a></div>
+          </div>
+          <div class="lx-card lx-pricing-card lx-featured reveal stagger-up">
+            <div class="lx-media"><img src="assets/images/home1/packages/complete.jpg" alt="Complete Wellness Check"></div>
+            <h3>Complete Wellness Check</h3>
+            <div class="lx-price-block"><span class="lx-price">$199</span></div>
+            <p>A comprehensive screening for optimal health and prevention.</p>
+            <ul class="lx-list">
+              <li><i class="bi bi-check2"></i> Essential Tests +</li>
+              <li><i class="bi bi-check2"></i> Liver & Kidney Function</li>
+              <li><i class="bi bi-check2"></i> Thyroid Profile</li>
+            </ul>
+            <div class="lx-actions"><a href="pages/home1/packages/package-detail.html" class="lx-btn secondary">View Details</a><a href="pages/booking/book-test.html" class="lx-btn primary">Book Now</a></div>
+          </div>
+          <div class="lx-card lx-pricing-card reveal stagger-up">
+            <div class="lx-media"><img src="assets/images/home1/packages/heart.jpg" alt="Heart Health Package"></div>
+            <h3>Heart Health Package</h3>
+            <div class="lx-price-block"><span class="lx-price">$149</span></div>
+            <p>Specialized tests focusing on cardiovascular risk factors.</p>
+            <ul class="lx-list">
+              <li><i class="bi bi-check2"></i> Advanced Lipid Profile</li>
+              <li><i class="bi bi-check2"></i> hs-CRP</li>
+              <li><i class="bi bi-check2"></i> Homocysteine</li>
+            </ul>
+            <div class="lx-actions"><a href="pages/home1/packages/package-detail.html" class="lx-btn secondary">View Details</a><a href="pages/booking/book-test.html" class="lx-btn primary">Book Now</a></div>
+          </div>
+          <div class="lx-card lx-pricing-card reveal stagger-up">
+            <div class="lx-media"><img src="assets/images/home1/packages/diabetes.jpg" alt="Diabetes Care Package"></div>
+            <h3>Diabetes Care Package</h3>
+            <div class="lx-price-block"><span class="lx-price">$129</span></div>
+            <p>Monitor your blood sugar and related health factors.</p>
+            <ul class="lx-list">
+              <li><i class="bi bi-check2"></i> HbA1c</li>
+              <li><i class="bi bi-check2"></i> Fasting Insulin</li>
+              <li><i class="bi bi-check2"></i> Microalbumin</li>
+            </ul>
+            <div class="lx-actions"><a href="pages/home1/packages/package-detail.html" class="lx-btn secondary">View Details</a><a href="pages/booking/book-test.html" class="lx-btn primary">Book Now</a></div>
+          </div>
+          <div class="lx-card lx-pricing-card reveal stagger-up">
+            <div class="lx-media"><img src="assets/images/home1/packages/women.jpg" alt="Women's Wellness Package"></div>
+            <h3>Women's Wellness Package</h3>
+            <div class="lx-price-block"><span class="lx-price">$179</span></div>
+            <p>Targeted diagnostics designed for women's health needs.</p>
+            <ul class="lx-list">
+              <li><i class="bi bi-check2"></i> Thyroid Profile</li>
+              <li><i class="bi bi-check2"></i> Hormone Panel</li>
+              <li><i class="bi bi-check2"></i> Iron & Vitamin D</li>
+            </ul>
+            <div class="lx-actions"><a href="pages/home1/packages/package-detail.html" class="lx-btn secondary">View Details</a><a href="pages/booking/book-test.html" class="lx-btn primary">Book Now</a></div>
+          </div>
+          <div class="lx-card lx-pricing-card reveal stagger-up">
+            <div class="lx-media"><img src="assets/images/home1/packages/senior.jpg" alt="Senior Health Package"></div>
+            <h3>Senior Health Package</h3>
+            <div class="lx-price-block"><span class="lx-price">$159</span></div>
+            <p>Comprehensive tests for those aged 60 and above.</p>
+            <ul class="lx-list">
+              <li><i class="bi bi-check2"></i> Complete Wellness +</li>
+              <li><i class="bi bi-check2"></i> Bone Density Markers</li>
+              <li><i class="bi bi-check2"></i> Vitamin B12</li>
+            </ul>
+            <div class="lx-actions"><a href="pages/home1/packages/package-detail.html" class="lx-btn secondary">View Details</a><a href="pages/booking/book-test.html" class="lx-btn primary">Book Now</a></div>
+          </div>
+        </div>
       </div>
-    </div>
-  </section>
-  <section class="lx-section">
-    <div class="lx-container">
-      
-<div class="lx-section-head reveal">
-  <div>
-    <span class="lx-eyebrow">Doctors</span>
-    <h2 class="lx-heading">Specialists Behind Your Reports</h2>
-    <p class="lx-copy">Realistic medical cards for pathologists, consultants, and laboratory leadership.</p>
-  </div>
-</div>
-      <div class="lx-grid" style="--cols:3">
-<article class="lx-card reveal" data-filter-card data-category="all" style="transition-delay:0ms">
-  <div class="lx-media" style="min-height:190px;margin:-8px -8px 18px"><img src="https://images.unsplash.com/photo-1559839734-2b71ea197ec2?auto=format&fit=crop&w=1200&q=85" alt="Dr. Sarah Jenkins" loading="lazy" style="min-height:190px"></div>
-  <h3>Dr. Sarah Jenkins</h3>
-  <p>Consultant Pathologist with 14 years in hematology and preventive diagnostics.</p>
-  <div class="lx-chip-row"><span class="lx-chip">Pathology</span><span class="lx-chip">14 yrs</span></div>
-  
-  <div class="lx-page-actions"><a class="lx-btn secondary" href="pages/doctor-details.html">View Profile</a></div>
-</article>
-<article class="lx-card reveal" data-filter-card data-category="all" style="transition-delay:70ms">
-  <div class="lx-media" style="min-height:190px;margin:-8px -8px 18px"><img src="https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?auto=format&fit=crop&w=1200&q=85" alt="Dr. Robert Chen" loading="lazy" style="min-height:190px"></div>
-  <h3>Dr. Robert Chen</h3>
-  <p>Laboratory Director focused on quality systems and clinical chemistry.</p>
-  <div class="lx-chip-row"><span class="lx-chip">Clinical Chemistry</span><span class="lx-chip">18 yrs</span></div>
-  
-  <div class="lx-page-actions"><a class="lx-btn secondary" href="pages/doctor-details.html">View Profile</a></div>
-</article>
-<article class="lx-card reveal" data-filter-card data-category="all" style="transition-delay:140ms">
-  <div class="lx-media" style="min-height:190px;margin:-8px -8px 18px"><img src="https://images.unsplash.com/photo-1622253692010-333f2da6031d?auto=format&fit=crop&w=1200&q=85" alt="Dr. Maya Patel" loading="lazy" style="min-height:190px"></div>
-  <h3>Dr. Maya Patel</h3>
-  <p>Endocrine diagnostics specialist for diabetes, thyroid, and hormone testing.</p>
-  <div class="lx-chip-row"><span class="lx-chip">Endocrinology</span><span class="lx-chip">11 yrs</span></div>
-  
-  <div class="lx-page-actions"><a class="lx-btn secondary" href="pages/doctor-details.html">View Profile</a></div>
-</article></div>
-    </div>
-  </section>
-  <section class="lx-section lx-band">
-    <div class="lx-container">
-      
-<div class="lx-section-head reveal">
-  <div>
-    <span class="lx-eyebrow">Certified. Trusted. Reliable.</span>
-    <h2 class="lx-heading">Accreditation-ready quality badges.</h2>
-    <p class="lx-copy">Generic certification-style cards avoid fake official logos while keeping the template commercially useful.</p>
-  </div>
-</div>
-      <div class="lx-grid" style="--cols:4">
-<article class="lx-card reveal" data-filter-card data-category="all" style="transition-delay:0ms">
-  <span class="lx-iconbox"><i class="bi bi-award"></i></span>
-  <h3>Accreditation Workflow</h3>
-  <p>Structured sample handling, result review, and release checkpoints for accredited laboratory operations.</p>
-  
-  
-  
-</article>
-<article class="lx-card reveal" data-filter-card data-category="all" style="transition-delay:70ms">
-  <span class="lx-iconbox"><i class="bi bi-award"></i></span>
-  <h3>Quality Audit Program</h3>
-  <p>Routine internal audits help teams keep procedures measurable, documented, and easy to verify.</p>
-  
-  
-  
-</article>
-<article class="lx-card reveal" data-filter-card data-category="all" style="transition-delay:140ms">
-  <span class="lx-iconbox"><i class="bi bi-award"></i></span>
-  <h3>ISO Process Documentation</h3>
-  <p>Documented procedures for specimen handling, equipment checks, reporting, and corrective actions.</p>
-  
-  
-  
-</article>
-<article class="lx-card reveal" data-filter-card data-category="all" style="transition-delay:210ms">
-  <span class="lx-iconbox"><i class="bi bi-award"></i></span>
-  <h3>Daily Internal Controls</h3>
-  <p>Daily controls, calibration logs, and review steps support consistent diagnostic quality.</p>
-  
-  
-  
-</article></div>
-    </div>
-  </section>
-  <section class="lx-section">
-    <div class="lx-container">
-      
-<div class="lx-section-head reveal">
-  <div>
-    <span class="lx-eyebrow">Testimonials</span>
-    <h2 class="lx-heading">Patients trust the details.</h2>
-    <p class="lx-copy">A smooth responsive carousel with different patient stories and ratings.</p>
-  </div>
-</div>
-      <div class="lx-slider reveal" data-slider><div class="lx-slider-track">
-        <article class="lx-slide"><div class="lx-card"><span style="color:#f59e0b">5/5 rating</span><p style="margin-top:12px">The technician was on time and the report was easy to understand.</p><h3>Ava Morgan, Queens</h3></div></article><article class="lx-slide"><div class="lx-card"><span style="color:#f59e0b">5/5 rating</span><p style="margin-top:12px">My parents use LaboraX for monthly tests. The home visit flow is calm and reliable.</p><h3>Daniel Reed, Brooklyn</h3></div></article><article class="lx-slide"><div class="lx-card"><span style="color:#f59e0b">5/5 rating</span><p style="margin-top:12px">Fast reports helped my doctor adjust treatment the same day.</p><h3>Priya Shah, Jersey City</h3></div></article><article class="lx-slide"><div class="lx-card"><span style="color:#f59e0b">5/5 rating</span><p style="margin-top:12px">The package pricing was clear and the dashboard kept all records together.</p><h3>Liam Carter, Newark</h3></div></article><article class="lx-slide"><div class="lx-card"><span style="color:#f59e0b">5/5 rating</span><p style="margin-top:12px">Booking a slot for my father took less than two minutes.</p><h3>Nora Williams, Edison</h3></div></article><article class="lx-slide"><div class="lx-card"><span style="color:#f59e0b">5/5 rating</span><p style="margin-top:12px">The support team explained fasting instructions clearly.</p><h3>Mateo Garcia, Hoboken</h3></div></article>
-      </div><div class="lx-dots"></div></div>
-    </div>
-  </section>
-  <section class="lx-section lx-band">
-    <div class="lx-container">
-      
-<div class="lx-section-head reveal">
-  <div>
-    <span class="lx-eyebrow">Health Tips</span>
-    <h2 class="lx-heading">Medical education that supports better testing.</h2>
-    <p class="lx-copy">Prepared article cards for patient education and SEO-rich content.</p>
-  </div>
-</div>
-      <div class="lx-grid" style="--cols:3">
-<article class="lx-card reveal" data-filter-card data-category="all" style="transition-delay:0ms">
-  <div class="lx-media" style="min-height:190px;margin:-8px -8px 18px"><img src="https://images.unsplash.com/photo-1576091160550-2173dba999ef?auto=format&fit=crop&w=1200&q=85" alt="Blood Test Preparation" loading="lazy" style="min-height:190px"></div>
-  <h3>Blood Test Preparation</h3>
-  <p>When to fast, what to drink, and how medication timing affects results.</p>
-  
-  
-  <div class="lx-page-actions"><a class="lx-btn secondary" href="pages/blog-fasting-blood-sugar.html">Read Article</a></div>
-</article>
-<article class="lx-card reveal" data-filter-card data-category="all" style="transition-delay:70ms">
-  <div class="lx-media" style="min-height:190px;margin:-8px -8px 18px"><img src="https://images.unsplash.com/photo-1581595219315-a187dd40c322?auto=format&fit=crop&w=1200&q=85" alt="Understanding CBC" loading="lazy" style="min-height:190px"></div>
-  <h3>Understanding CBC</h3>
-  <p>A patient-friendly walkthrough of common blood count markers.</p>
-  
-  
-  <div class="lx-page-actions"><a class="lx-btn secondary" href="pages/blog-details.html">Read Article</a></div>
-</article>
-<article class="lx-card reveal" data-filter-card data-category="all" style="transition-delay:140ms">
-  <div class="lx-media" style="min-height:190px;margin:-8px -8px 18px"><img src="https://images.unsplash.com/photo-1559839734-2b71ea197ec2?auto=format&fit=crop&w=1200&q=85" alt="Vitamin D Testing" loading="lazy" style="min-height:190px"></div>
-  <h3>Vitamin D Testing</h3>
-  <p>Why vitamin D matters for bone, immunity, and fatigue evaluation.</p>
-  
-  
-  <div class="lx-page-actions"><a class="lx-btn secondary" href="pages/blog-vitamin-d.html">Read Article</a></div>
-</article></div>
-    </div>
-  </section>
-  <section class="lx-section">
-    <div class="lx-container">
-      
-<div class="lx-section-head reveal">
-  <div>
-    <span class="lx-eyebrow">FAQ</span>
-    <h2 class="lx-heading">Common questions before a blood test.</h2>
-    
-  </div>
-</div>
-      <div class="lx-faq" data-lx-faq>
-        <article class="lx-card"><button aria-expanded="false">How should I prepare for a blood test?<i class="bi bi-plus-lg"></i></button><div class="lx-faq-panel">Some tests need 8-12 hours of fasting. Your booking confirmation should show preparation instructions for each test.</div></article><article class="lx-card"></article><article class="lx-card"><button aria-expanded="false">How long do reports take?<i class="bi bi-plus-lg"></i></button><div class="lx-faq-panel">Most routine reports are ready within 12 to 24 hours. Specialty tests may take longer.</div></article><article class="lx-card"><button aria-expanded="false">Can I upload a prescription?<i class="bi bi-plus-lg"></i></button><div class="lx-faq-panel">Yes. The patient dashboard includes prescription upload pages.</div></article><article class="lx-card"><button aria-expanded="false">How can I download my report?<i class="bi bi-plus-lg"></i></button><div class="lx-faq-panel">Login to the patient dashboard and open Reports to view or download PDFs.</div></article><article class="lx-card"><button aria-expanded="false">Can I reschedule my appointment?<i class="bi bi-plus-lg"></i></button><div class="lx-faq-panel">Yes. Open your booking details and select a different available slot.</div></article>
+    </section>
+
+    <!-- DIAGNOSTIC SERVICES -->
+    <section class="lx-section lx-band">
+      <div class="lx-container">
+        <div class="lx-section-head reveal">
+          <span class="lx-eyebrow">Our Services</span>
+          <h2 class="lx-heading">Comprehensive Diagnostic Services</h2>
+        </div>
+        <div class="lx-grid lx-three">
+          <a href="pages/home1/services/service-detail.html" class="lx-card reveal stagger-up">
+            <div class="lx-media"><img src="assets/images/home1/services/blood.jpg" alt="Blood Testing Service"></div>
+            <h3>Blood Testing</h3>
+            <p>Routine and specialized blood tests for accurate health assessment.</p>
+            <span class="lx-link">Learn More</span>
+          </a>
+          <a href="pages/home1/services/service-detail.html" class="lx-card reveal stagger-up">
+            <div class="lx-media"><img src="assets/images/home1/services/preventive.jpg" alt="Preventive Screening"></div>
+            <h3>Preventive Screening</h3>
+            <p>Early detection programs designed to maintain optimal wellness.</p>
+            <span class="lx-link">Learn More</span>
+          </a>
+          <a href="pages/home1/services/service-detail.html" class="lx-card reveal stagger-up">
+            <div class="lx-media"><img src="assets/images/home1/services/advanced.jpg" alt="Advanced Diagnostics"></div>
+            <h3>Advanced Diagnostics</h3>
+            <p>Specialized clinical tests utilizing cutting-edge laboratory tech.</p>
+            <span class="lx-link">Learn More</span>
+          </a>
+          <a href="pages/home1/services/service-detail.html" class="lx-card reveal stagger-up">
+            <div class="lx-media"><img src="assets/images/home1/services/hormone.jpg" alt="Hormone Testing"></div>
+            <h3>Hormone Testing</h3>
+            <p>Comprehensive endocrine panels for men and women.</p>
+            <span class="lx-link">Learn More</span>
+          </a>
+          <a href="pages/home1/services/service-detail.html" class="lx-card reveal stagger-up">
+            <div class="lx-media"><img src="assets/images/home1/services/wellness.jpg" alt="Wellness Screening"></div>
+            <h3>Wellness Screening</h3>
+            <p>Nutritional and metabolic profiling for lifestyle health.</p>
+            <span class="lx-link">Learn More</span>
+          </a>
+          <a href="pages/home1/services/service-detail.html" class="lx-card reveal stagger-up">
+            <div class="lx-media"><img src="assets/images/home1/services/digital-reports.jpg" alt="Digital Reports"></div>
+            <h3>Digital Reports</h3>
+            <p>Fast, secure, and easily accessible digital diagnostic reports.</p>
+            <span class="lx-link">Learn More</span>
+          </a>
+        </div>
       </div>
-    </div>
-  </section>
-  <section class="lx-section lx-cta" style="--cta-image:url('https://images.unsplash.com/photo-1576086213369-97a306d36557?auto=format&fit=crop&w=1200&q=85')">
-    <div class="lx-container reveal">
-      <h2 class="lx-heading">Your Health Deserves Better Answers.</h2>
-      <p class="lx-copy">Book a test or explore preventive packages with a diagnostic template built to feel premium from the first screen.</p>
-      <div class="lx-actions"><a class="lx-btn primary" href="pages/home1/tests.html">Book a Test</a><a class="lx-btn secondary" href="pages/home1/packages.html">Explore Packages</a></div>
-    </div>
-  </section></main>
-  
-<footer id="main-footer" class="lx-footer"></footer>
-  
-<script src="assets/js/auth.js"></script>
-<script src="assets/js/theme.js"></script>
-<script src="assets/js/main.js"></script>
-<script src="assets/js/navigation.js"></script>
-<script src="assets/js/laborax-template.js"></script>
+    </section>
+
+    <!-- HOW IT WORKS -->
+    <section class="lx-section">
+      <div class="lx-container">
+        <div class="lx-section-head reveal">
+          <span class="lx-eyebrow">The Process</span>
+          <h2 class="lx-heading">Your Diagnostic Journey in Four Simple Steps</h2>
+        </div>
+        <div class="lx-grid lx-four">
+          <div class="lx-step-card reveal stagger-up">
+            <div class="lx-step-num">01</div>
+            <h3>Choose Your Test</h3>
+            <p>Select from our comprehensive range of tests or packages.</p>
+          </div>
+          <div class="lx-step-card reveal stagger-up">
+            <div class="lx-step-num">02</div>
+            <h3>Book Your Appointment</h3>
+            <p>Schedule a visit to our laboratory online or by phone.</p>
+          </div>
+          <div class="lx-step-card reveal stagger-up">
+            <div class="lx-step-num">03</div>
+            <h3>Complete Your Diagnostic Test</h3>
+            <p>Our expert technicians collect your samples safely.</p>
+          </div>
+          <div class="lx-step-card reveal stagger-up">
+            <div class="lx-step-num">04</div>
+            <h3>Receive Your Report</h3>
+            <p>Access accurate, verified results quickly and securely.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- DOCTORS -->
+    <section class="lx-section lx-band">
+      <div class="lx-container">
+        <div class="lx-section-head reveal">
+          <span class="lx-eyebrow">Medical Experts</span>
+          <h2 class="lx-heading">Supported by Healthcare Professionals</h2>
+        </div>
+        <div class="lx-grid lx-three">
+          <div class="lx-card reveal stagger-up">
+            <div class="lx-media"><img src="https://images.unsplash.com/photo-1559839734-2b71ea197ec2?auto=format&fit=crop&w=600&q=80" alt="Dr. Sarah Jenkins"></div>
+            <h3>Dr. Sarah Jenkins</h3>
+            <p class="lx-muted">Chief Pathologist</p>
+            <p>20+ years experience in clinical pathology and diagnostics.</p>
+          </div>
+          <div class="lx-card reveal stagger-up">
+            <div class="lx-media"><img src="https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?auto=format&fit=crop&w=600&q=80" alt="Dr. Michael Chen"></div>
+            <h3>Dr. Michael Chen</h3>
+            <p class="lx-muted">Head of Biochemistry</p>
+            <p>Specialist in metabolic profiling and preventive health.</p>
+          </div>
+          <div class="lx-card reveal stagger-up">
+            <div class="lx-media"><img src="https://images.unsplash.com/photo-1594824436998-058f2460e11a?auto=format&fit=crop&w=600&q=80" alt="Dr. Elena Rodriguez"></div>
+            <h3>Dr. Elena Rodriguez</h3>
+            <p class="lx-muted">Senior Microbiologist</p>
+            <p>Leading research in infectious disease diagnostics.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- TESTIMONIALS -->
+    <section class="lx-section">
+      <div class="lx-container">
+        <div class="lx-section-head reveal">
+          <span class="lx-eyebrow">Testimonials</span>
+          <h2 class="lx-heading">What Our Patients Say</h2>
+        </div>
+        <div class="lx-grid lx-three">
+          <div class="lx-card reveal stagger-up">
+            <div class="lx-rating"><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i></div>
+            <p>"The laboratory was incredibly clean and professional. I received my comprehensive package reports within 24 hours. Highly recommended!"</p>
+            <h4 style="margin-top:20px;">- Robert</h4>
+          </div>
+          <div class="lx-card reveal stagger-up">
+            <div class="lx-rating"><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i></div>
+            <p>"Excellent service. The technician was gentle and explained everything clearly. The digital report access made sharing with my doctor easy."</p>
+            <h4 style="margin-top:20px;">- Emily</h4>
+          </div>
+          <div class="lx-card reveal stagger-up">
+            <div class="lx-rating"><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-half"></i></div>
+            <p>"I've been using LaboraX for my annual checkups for years. The accuracy and reliability of their diagnostic testing are unmatched in the city."</p>
+            <h4 style="margin-top:20px;">- James</h4>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- BLOG -->
+    <section class="lx-section lx-band">
+      <div class="lx-container">
+        <div class="lx-section-head reveal">
+          <span class="lx-eyebrow">Medical Blog</span>
+          <h2 class="lx-heading">Health Insights From Our Experts</h2>
+        </div>
+        <div class="lx-grid lx-four">
+          <a href="pages/home1/blog/blog-detail.html" class="lx-card reveal stagger-up">
+            <div class="lx-media"><img src="assets/images/home1/blog/understanding-blood.jpg" alt="Understanding Your Blood Test"></div>
+            <h3>Understanding Your Blood Test</h3>
+            <span class="lx-link">Read Article</span>
+          </a>
+          <a href="pages/home1/blog/blog-detail.html" class="lx-card reveal stagger-up">
+            <div class="lx-media"><img src="assets/images/home1/blog/preventive.jpg" alt="Why Preventive Screening Matters"></div>
+            <h3>Why Preventive Screening Matters</h3>
+            <span class="lx-link">Read Article</span>
+          </a>
+          <a href="pages/home1/blog/blog-detail.html" class="lx-card reveal stagger-up">
+            <div class="lx-media"><img src="assets/images/home1/blog/vitamin-d.jpg" alt="Vitamin D: What Your Results Mean"></div>
+            <h3>Vitamin D: What Your Results Mean</h3>
+            <span class="lx-link">Read Article</span>
+          </a>
+          <a href="pages/home1/blog/blog-detail.html" class="lx-card reveal stagger-up">
+            <div class="lx-media"><img src="assets/images/home1/blog/preparing.jpg" alt="Preparing for a Diagnostic Test"></div>
+            <h3>Preparing for a Diagnostic Test</h3>
+            <span class="lx-link">Read Article</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="lx-section lx-cta" style="--cta-image:url('https://images.unsplash.com/photo-1579154204601-01588f351e67?auto=format&fit=crop&w=1400&q=85')">
+      <div class="lx-container reveal">
+        <h2 class="lx-heading">Take the Next Step Toward Better Health</h2>
+        <p class="lx-copy" style="max-width:600px; margin: 0 auto 30px;">Choose the right diagnostic test and make informed decisions about your health.</p>
+        <div class="lx-actions">
+          <a class="lx-btn primary" href="pages/booking/book-test.html">Book a Test</a>
+          <a class="lx-btn secondary" href="pages/home1/packages.html">Explore Packages</a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+  <footer id="main-footer"></footer>
+  <script src="assets/js/theme.js"></script>
 </body>
 </html>
