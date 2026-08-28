@@ -949,3 +949,8 @@ img { max-width: 100%; display: block; }
   position: relative;
   z-index: 2;
 }
+
+/* Enable 4-column grids */
+.lx-grid.lx-four {
+  --cols: 4;
+}
