@@ -17,7 +17,64 @@
   <link rel="icon" type="image/png" sizes="32x32" href="../../../assets/images/logo/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="../../../assets/images/logo/favicon-16x16.png">
   <link rel="apple-touch-icon" href="../../../assets/images/logo/apple-touch-icon.png">
-</head><body class="lx-shell"><main class="lx-dashboard"><aside class="lx-sidebar"><a class="lx-logo" href="../../../index.html">Labora<span>X</span></a><a class="" href="index.html"><i class="bi bi-grid"></i>Overview</a><a class="" href="bookings.html"><i class="bi bi-calendar"></i>Bookings</a><a class="" href="reports.html"><i class="bi bi-file-medical"></i>Reports</a><a class="active" href="prescriptions.html"><i class="bi bi-cloud-upload"></i>Prescriptions</a><a class="" href="family.html"><i class="bi bi-people"></i>Family</a><a class="" href="profile.html"><i class="bi bi-person"></i>Profile</a><a class="" href="settings.html"><i class="bi bi-gear"></i>Settings</a><a href="../../../index.html"><i class="bi bi-box-arrow-left"></i>Exit</a></aside><section class="lx-dash-content"><div class="lx-dash-head"><div><span class="lx-eyebrow">Patient Dashboard</span><h1 class="lx-heading">Prescriptions</h1></div><div class="lx-dash-tools"><button class="lx-icon" data-theme-toggle type="button" aria-label="Switch to dark mode"><i class="bi bi-moon-stars"></i></button><button class="lx-direction" data-rtl-toggle type="button" aria-label="Switch text direction">RTL</button></div></div><div class="lx-grid" style="--cols:2"><article class="lx-card"><h3>prescriptions management</h3><p>Responsive patient dashboard page for prescriptions workflows.</p></article><article class="lx-card"><h3>Mobile-ready</h3><p>Tables and cards adapt for small screens.</p></article></div></section></main>
+</head><body class="lx-shell"><main class="lx-dashboard"><aside class="lx-sidebar"><a class="lx-logo" href="../../../index.html">Labora<span>X</span></a><a class="" href="index.html"><i class="bi bi-grid"></i>Overview</a><a class="" href="bookings.html"><i class="bi bi-calendar"></i>Bookings</a><a class="" href="reports.html"><i class="bi bi-file-medical"></i>Reports</a><a class="active" href="prescriptions.html"><i class="bi bi-cloud-upload"></i>Prescriptions</a><a class="" href="family.html"><i class="bi bi-people"></i>Family</a><a class="" href="profile.html"><i class="bi bi-person"></i>Profile</a><a class="" href="settings.html"><i class="bi bi-gear"></i>Settings</a><a href="../../../index.html"><i class="bi bi-box-arrow-left"></i>Exit</a></aside><section class="lx-dash-content"><div class="lx-dash-head"><div><span class="lx-eyebrow">Patient Dashboard</span><h1 class="lx-heading">Prescriptions</h1></div><div class="lx-dash-tools"><button class="lx-icon" data-theme-toggle type="button" aria-label="Switch to dark mode"><i class="bi bi-moon-stars"></i></button><button class="lx-direction" data-rtl-toggle type="button" aria-label="Switch text direction">RTL</button></div></div>
+  <div class="lx-grid" style="--cols:1; gap: 32px;">
+    <!-- Upload Section -->
+    <section class="lx-card reveal stagger-up">
+      <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom: 24px; flex-wrap: wrap; gap: 16px;">
+        <h2 style="margin:0;">Upload Prescription</h2>
+      </div>
+      <div class="lx-upload-area" style="border: 2px dashed rgb(var(--border-primary)); border-radius: 12px; padding: 48px 24px; text-align: center; background: rgba(var(--primary-red), 0.03); transition: all 0.3s ease; cursor: pointer;" onmouseover="this.style.background='rgba(var(--primary-red), 0.08)'; this.style.borderColor='rgb(var(--primary-red))';" onmouseout="this.style.background='rgba(var(--primary-red), 0.03)'; this.style.borderColor='rgb(var(--border-primary))';">
+        <i class="bi bi-cloud-arrow-up" style="font-size: 48px; color: rgb(var(--primary-red)); margin-bottom: 16px; display: block;"></i>
+        <h3 style="margin-bottom: 8px;">Drag & Drop your prescription here</h3>
+        <p style="color: rgb(var(--text-muted)); margin-bottom: 24px;">Supported formats: PDF, JPG, PNG (Max 5MB)</p>
+        <button class="lx-btn secondary" style="pointer-events: none; margin: 0 auto;">Browse Files</button>
+      </div>
+      <p style="margin-top: 16px; font-size: 14px; color: rgb(var(--text-muted));"><i class="bi bi-info-circle"></i> Once uploaded, our medical team will review your prescription and automatically add the required tests to your cart for booking.</p>
+    </section>
+
+    <!-- Upload History -->
+    <section class="lx-card reveal stagger-up" style="transition-delay: 0.1s;">
+      <h2 style="margin-top:0; margin-bottom: 24px;">Prescription History</h2>
+      <div class="lx-table-wrap">
+        <table class="lx-table">
+          <thead>
+            <tr>
+              <th>Date Uploaded</th>
+              <th>File Name</th>
+              <th>Patient</th>
+              <th>Status</th>
+              <th>Action</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Oct 24, 2026</td>
+              <td><strong>dr_smith_bloodwork.pdf</strong></td>
+              <td>John Doe</td>
+              <td><span class="lx-badge" style="background: rgba(var(--primary-red), 0.1); color: rgb(var(--primary-red)); padding: 4px 8px; border-radius: 4px; font-size: 12px; font-weight: 600;">Processing</span></td>
+              <td><a href="#" style="color: rgb(var(--primary-red)); font-weight: 500; text-decoration: none;">View</a></td>
+            </tr>
+            <tr>
+              <td>Sep 15, 2026</td>
+              <td><strong>prescription_0915.jpg</strong></td>
+              <td>Sarah Doe (Family)</td>
+              <td><span class="lx-badge" style="background: rgba(34, 197, 94, 0.1); color: rgb(34, 197, 94); padding: 4px 8px; border-radius: 4px; font-size: 12px; font-weight: 600;">Tests Booked</span></td>
+              <td><a href="#" style="color: rgb(var(--primary-red)); font-weight: 500; text-decoration: none;">View</a></td>
+            </tr>
+            <tr>
+              <td>Aug 02, 2026</td>
+              <td><strong>scan_request.pdf</strong></td>
+              <td>John Doe</td>
+              <td><span class="lx-badge" style="background: rgba(34, 197, 94, 0.1); color: rgb(34, 197, 94); padding: 4px 8px; border-radius: 4px; font-size: 12px; font-weight: 600;">Tests Booked</span></td>
+              <td><a href="#" style="color: rgb(var(--primary-red)); font-weight: 500; text-decoration: none;">View</a></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+  </div>
+</section></main>
 <script src="../../../assets/js/auth.js"></script>
 <script src="../../../assets/js/theme.js"></script>
 <script src="../../../assets/js/main.js"></script>

@@ -17,7 +17,101 @@
   <link rel="icon" type="image/png" sizes="32x32" href="../../../assets/images/logo/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="../../../assets/images/logo/favicon-16x16.png">
   <link rel="apple-touch-icon" href="../../../assets/images/logo/apple-touch-icon.png">
-</head><body class="lx-shell"><main class="lx-dashboard"><aside class="lx-sidebar"><a class="lx-logo" href="../../../index.html">Labora<span>X</span></a><a class="" href="index.html"><i class="bi bi-grid"></i>Overview</a><a class="active" href="bookings.html"><i class="bi bi-calendar"></i>Bookings</a><a class="" href="reports.html"><i class="bi bi-file-medical"></i>Reports</a><a class="" href="prescriptions.html"><i class="bi bi-cloud-upload"></i>Prescriptions</a><a class="" href="family.html"><i class="bi bi-people"></i>Family</a><a class="" href="profile.html"><i class="bi bi-person"></i>Profile</a><a class="" href="settings.html"><i class="bi bi-gear"></i>Settings</a><a href="#" data-auth-logout><i class="bi bi-box-arrow-left"></i>Logout</a></aside><section class="lx-dash-content"><div class="lx-dash-head"><div><span class="lx-eyebrow">Patient Dashboard</span><h1 class="lx-heading">My Bookings</h1></div><div class="lx-dash-tools"><button class="lx-icon" data-theme-toggle type="button" aria-label="Switch to dark mode"><i class="bi bi-moon-stars"></i></button><button class="lx-direction" data-rtl-toggle type="button" aria-label="Switch text direction">RTL</button></div></div><div class="lx-card"><h3>Upcoming Bookings</h3><div style="overflow-x:auto;"><table style="width:100%; border-collapse:collapse; margin-top:15px; text-align:left;"><thead><tr style="border-bottom:1px solid var(--border-color); color:var(--muted);"><th style="padding:10px;">Booking ID</th><th style="padding:10px;">Test/Package</th><th style="padding:10px;">Date & Time</th><th style="padding:10px;">Amount</th><th style="padding:10px;">Status</th></tr></thead><tbody><tr style="border-bottom:1px solid var(--border-color);"><td style="padding:15px 10px; font-weight:600;">#BKG-8892</td><td style="padding:15px 10px;">Complete Health Checkup</td><td style="padding:15px 10px;">Oct 28, 2026 - 08:30 AM</td><td style="padding:15px 10px;">$149.00</td><td style="padding:15px 10px;"><span style="background:rgba(239, 68, 68, 0.1); color:var(--primary-red); padding:4px 8px; border-radius:4px; font-size:12px; font-weight:600;">Upcoming</span></td></tr></tbody></table></div></div><div class="lx-card" style="margin-top:20px;"><h3>Completed Bookings</h3><p style="color:var(--muted);">No past bookings found.</p></div></section></main>
+</head><body class="lx-shell"><main class="lx-dashboard"><aside class="lx-sidebar"><a class="lx-logo" href="../../../index.html">Labora<span>X</span></a><a class="" href="index.html"><i class="bi bi-grid"></i>Overview</a><a class="active" href="bookings.html"><i class="bi bi-calendar"></i>Bookings</a><a class="" href="reports.html"><i class="bi bi-file-medical"></i>Reports</a><a class="" href="prescriptions.html"><i class="bi bi-cloud-upload"></i>Prescriptions</a><a class="" href="family.html"><i class="bi bi-people"></i>Family</a><a class="" href="profile.html"><i class="bi bi-person"></i>Profile</a><a class="" href="settings.html"><i class="bi bi-gear"></i>Settings</a><a href="#" data-auth-logout><i class="bi bi-box-arrow-left"></i>Logout</a></aside><section class="lx-dash-content"><div class="lx-dash-head"><div><span class="lx-eyebrow">Patient Dashboard</span><h1 class="lx-heading">My Bookings</h1></div><div class="lx-dash-tools"><button class="lx-icon" data-theme-toggle type="button" aria-label="Switch to dark mode"><i class="bi bi-moon-stars"></i></button><button class="lx-direction" data-rtl-toggle type="button" aria-label="Switch text direction">RTL</button></div></div>
+
+  <!-- Live Tracking -->
+  <div class="lx-card reveal stagger-up" style="margin-bottom: 32px;">
+    <h2 style="margin-top:0; margin-bottom: 24px; border-bottom: 1px solid rgb(var(--border-primary)); padding-bottom: 16px;">Live Tracking: #BKG-8892</h2>
+    
+    <div style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 32px; gap: 24px; flex-wrap: wrap;">
+      <div>
+        <h3 style="margin: 0 0 8px;">Complete Health Checkup</h3>
+        <p style="margin:0; color: rgb(var(--text-muted));"><i class="bi bi-geo-alt"></i> Home Collection • John Doe</p>
+      </div>
+      <div style="text-align: right;">
+        <h3 style="margin: 0 0 8px;">Oct 28, 2026</h3>
+        <p style="margin:0; color: rgb(var(--primary-red)); font-weight: 600;">Processing Sample in Lab</p>
+      </div>
+    </div>
+
+    <!-- Timeline -->
+    <div style="display: flex; justify-content: space-between; position: relative; margin-top: 48px; margin-bottom: 24px; padding: 0 16px;">
+      <!-- Connecting Line -->
+      <div style="position: absolute; top: 12px; left: 5%; right: 5%; height: 4px; background: rgb(var(--border-primary)); z-index: 1;">
+        <div style="height: 100%; width: 50%; background: rgb(var(--primary-red)); transition: width 1s ease;"></div>
+      </div>
+      
+      <!-- Step 1 -->
+      <div style="position: relative; z-index: 2; text-align: center; width: 25%;">
+        <div style="width: 28px; height: 28px; border-radius: 50%; background: rgb(var(--primary-red)); color: white; display: flex; align-items: center; justify-content: center; margin: 0 auto 12px; box-shadow: 0 0 0 6px rgb(var(--surface));"><i class="bi bi-check"></i></div>
+        <b style="display: block; font-size: 14px;">Scheduled</b>
+        <small style="color: rgb(var(--text-muted));">Oct 26, 10:00 AM</small>
+      </div>
+
+      <!-- Step 2 -->
+      <div style="position: relative; z-index: 2; text-align: center; width: 25%;">
+        <div style="width: 28px; height: 28px; border-radius: 50%; background: rgb(var(--primary-red)); color: white; display: flex; align-items: center; justify-content: center; margin: 0 auto 12px; box-shadow: 0 0 0 6px rgb(var(--surface));"><i class="bi bi-check"></i></div>
+        <b style="display: block; font-size: 14px;">Sample Collected</b>
+        <small style="color: rgb(var(--text-muted));">Oct 28, 08:45 AM</small>
+      </div>
+
+      <!-- Step 3 (Current) -->
+      <div style="position: relative; z-index: 2; text-align: center; width: 25%;">
+        <div style="width: 28px; height: 28px; border-radius: 50%; background: rgb(var(--surface)); border: 4px solid rgb(var(--primary-red)); color: rgb(var(--primary-red)); display: flex; align-items: center; justify-content: center; margin: 0 auto 12px; box-shadow: 0 0 0 6px rgb(var(--surface)); box-sizing: border-box;"></div>
+        <b style="display: block; font-size: 14px; color: rgb(var(--primary-red));">Processing</b>
+        <small style="color: rgb(var(--text-muted));">Est: Oct 28, 04:00 PM</small>
+      </div>
+
+      <!-- Step 4 -->
+      <div style="position: relative; z-index: 2; text-align: center; width: 25%;">
+        <div style="width: 28px; height: 28px; border-radius: 50%; background: rgb(var(--surface)); border: 4px solid rgb(var(--border-primary)); display: flex; align-items: center; justify-content: center; margin: 0 auto 12px; box-shadow: 0 0 0 6px rgb(var(--surface)); box-sizing: border-box;"></div>
+        <b style="display: block; font-size: 14px; color: rgb(var(--text-muted));">Report Ready</b>
+      </div>
+    </div>
+  </div>
+
+  <div class="lx-grid" style="--cols:1; gap:32px;">
+    <!-- All Bookings Table -->
+    <div class="lx-card reveal stagger-up" style="transition-delay: 0.1s;">
+      <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 24px;">
+        <h3 style="margin:0;">Booking History</h3>
+        <a href="../../../pages/booking/book-test.html" class="lx-btn primary" style="font-size: 13px; padding: 8px 16px;">Book New Test</a>
+      </div>
+      <div class="lx-table-wrap">
+        <table class="lx-table">
+          <thead>
+            <tr>
+              <th>Booking ID</th>
+              <th>Test/Package</th>
+              <th>Date & Time</th>
+              <th>Amount</th>
+              <th>Status</th>
+              <th>Action</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>#BKG-8892</strong></td>
+              <td>Complete Health Checkup</td>
+              <td>Oct 28, 2026 - 08:30 AM</td>
+              <td>$149.00</td>
+              <td><span class="lx-badge" style="background:rgba(var(--primary-red), 0.1); color:rgb(var(--primary-red)); padding:4px 8px; border-radius:4px; font-size:12px; font-weight:600;">Processing</span></td>
+              <td><a href="#" style="color: rgb(var(--primary-red)); font-weight: 500; text-decoration: none;">Track</a></td>
+            </tr>
+            <tr>
+              <td><strong>#BKG-8104</strong></td>
+              <td>Thyroid Profile</td>
+              <td>Mar 12, 2026 - 10:00 AM</td>
+              <td>$49.00</td>
+              <td><span class="lx-badge" style="background:rgba(34, 197, 94, 0.1); color:rgb(34, 197, 94); padding:4px 8px; border-radius:4px; font-size:12px; font-weight:600;">Completed</span></td>
+              <td><a href="reports.html" style="color: rgb(var(--text-primary)); text-decoration: none;">View Report</a></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</section></main>
 <script src="../../../assets/js/auth.js"></script>
 <script src="../../../assets/js/theme.js"></script>
 <script src="../../../assets/js/main.js"></script>
